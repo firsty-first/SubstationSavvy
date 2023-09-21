@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'com.example.chatme'
-    compileSdk 33
+    compileSdk 33 // Match this with your minSdkVersion
 
     defaultConfig {
         applicationId "com.example.chatme"
-        minSdk 30
-        targetSdk 33
+        minSdkVersion 24
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0"
 

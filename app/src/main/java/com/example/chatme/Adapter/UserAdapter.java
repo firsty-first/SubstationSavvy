@@ -41,7 +41,7 @@ Context context;
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 UserModel userModel=list.get((position));
-        Picasso.get().load(userModel.getProfile_pic()).placeholder(R.drawable.chat).into(holder.imageView);
+        Picasso.get().load(userModel.getProfile_pic()).placeholder(R.drawable.chatbot).into(holder.imageView);
         holder.userName.setText(userModel.getUserName());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override

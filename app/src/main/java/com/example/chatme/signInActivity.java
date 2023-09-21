@@ -97,6 +97,7 @@ binding.signInTv.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
         super.onCreate(savedInstanceState, persistentState);
+
         //auth=FirebaseAuth.getInstance();
     }
 }
