@@ -1,5 +1,6 @@
 package com.example.chatme;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -60,30 +61,42 @@ public class chatFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
       binding= FragmentChatBinding.inflate(inflater, container, false);
-        UserAdapter adapter=new UserAdapter(arrayList,getContext());
-        binding.chatRv.setAdapter(adapter);
-        LinearLayoutManager layoutManager=new LinearLayoutManager(getContext());
-        binding.chatRv.setLayoutManager(layoutManager);
-        database.getReference().child("user").addValueEventListener(new ValueEventListener() {
+//        UserAdapter adapter=new UserAdapter(arrayList,getContext());
+//        binding.chatRv.setAdapter(adapter);
+//        LinearLayoutManager layoutManager=new LinearLayoutManager(getContext());
+//        binding.chatRv.setLayoutManager(layoutManager);
+        binding.chatwithbot.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-               arrayList.clear();
-                for(DataSnapshot dataSnapshot: snapshot.getChildren())
-                {
-                    UserModel userModel=dataSnapshot.getValue(UserModel.class);
+            public void onClick(View view) {
+                Intent intent=new Intent(getContext(), chatscreen.class);
 
-              userModel.setUserId(dataSnapshot.getKey());
-                    arrayList.add(userModel);
-
-                }
-                adapter.notifyDataSetChanged();
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
+                intent.putExtra("userId","Bot-help");
+                intent.putExtra("userName","Bot");
+                startActivity(intent);
 
             }
         });
+
+//        database.getReference().child("user").addValueEventListener(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(@NonNull DataSnapshot snapshot) {
+//               arrayList.clear();
+//                for(DataSnapshot dataSnapshot: snapshot.getChildren())
+//                {
+//                    UserModel userModel=dataSnapshot.getValue(UserModel.class);
+//
+//              userModel.setUserId(dataSnapshot.getKey());
+//                    arrayList.add(userModel);
+//
+//                }
+//                adapter.notifyDataSetChanged();
+//            }
+//
+//            @Override
+//            public void onCancelled(@NonNull DatabaseError error) {
+//
+//            }
+//        });
 
 
 
