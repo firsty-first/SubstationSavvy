@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="blue_teal">#0D3651</color>
+    <color name="chat_editText">#8E91BF</color>
+    <color name="errorHint">#AC1B1B</color>
+    <color name="primary">#117C45</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">SubstationSavvy</string>
+    <string name="default_web_client_id" translatable="false">691741876904-rpjdvnlsov38l4ar2lu5o50c10nk7c9l.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">691741876904</string>
+    <string name="google_api_key" translatable="false">AIzaSyBGjt03EaFCmSknLRg--y8rBVciLY4--DQ</string>
+    <string name="google_app_id" translatable="false">1:691741876904:android:67f68dbb91d308f326589d</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBGjt03EaFCmSknLRg--y8rBVciLY4--DQ</string>
+    <string name="google_storage_bucket" translatable="false">chatme-5d527.appspot.com</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="project_id" translatable="false">chatme-5d527</string>
+    <style name="Base.Theme.Chatme" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.Chatme" parent="Base.Theme.Chatme"/>
+</resources>
