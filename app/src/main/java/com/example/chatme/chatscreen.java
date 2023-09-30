@@ -98,7 +98,7 @@ reciverRoom=recieverId+senderId;
             public void onClick(View view) {
                 storeMsgIndatabase();
                 String msg=binding.editTextText.getText().toString();
-                godpleaseHelp(msg);
+                getMessageFromBot(msg);
             }
             });
 
@@ -137,12 +137,14 @@ Log.d("db","Dberror");
 
                     model.setTimestamp(new Date().getTime());
                     binding.editTextText.setText("");
+                    model.isBot=false;
                     database.getReference().child("chats")
                             .child(senderRoom)
                             .push()
                             .setValue(model).addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
                                 public void onSuccess(Void unused) {
+                                    model.isBot=false;
                                     database.getReference().child("chats")
                                             .child(reciverRoom)
                                             .push()
@@ -155,9 +157,43 @@ Log.d("db","Dberror");
 
                                 }
                             });
-                }}
+                }
+    }
 
-    String godpleaseHelp(String usermessage)
+    void storeBOTMsgIndatabase(String botmsg)
+    {
+
+
+        if(botmsg.length()>0)
+        {
+            final messagesModel model=new messagesModel(senderId,botmsg);
+model.isBot=true;
+            model.setTimestamp(new Date().getTime());
+            binding.editTextText.setText("");
+
+            database.getReference().child("chats")
+                    .child(senderRoom)
+                    .push()
+                    .setValue(model).addOnSuccessListener(new OnSuccessListener<Void>() {
+                        @Override
+                        public void onSuccess(Void unused) {
+                            model.isBot=true;
+                            database.getReference().child("chats")
+                                    .child(reciverRoom)
+                                    .push()
+                                    .setValue(model).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                        @Override
+                                        public void onSuccess(Void unused) {
+
+                                        }
+                                    });
+
+                        }
+                    });
+        }
+    }
+
+    String getMessageFromBot(String usermessage)
     {
         Log.d("check","got into godplzhelp");
         Log.d("here is the uri",usermessage);
@@ -181,6 +217,7 @@ Log.d("db","Dberror");
                 if (response.isSuccessful()) {
                     // Handle the string response here
                     prediction = response.body();
+                    storeBOTMsgIndatabase(prediction);
                     Toast.makeText(getApplicationContext(), prediction, Toast.LENGTH_SHORT).show();
 
                     // Example: Display the prediction in a TextView

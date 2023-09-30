@@ -51,7 +51,7 @@ public class ChatAdapter extends RecyclerView.Adapter{
 //this function is overridden to decide which msgd too get into which chat bubble
     @Override
     public int getItemViewType(int position) {
-        if(messageModels.get(position).getuId().equals(FirebaseAuth.getInstance().getUid()))
+        if(messageModels.get(position).getuId().equals(FirebaseAuth.getInstance().getUid()) && messageModels.get(position).getBot()==false)
         {
             Log.d("type",Integer.toString(SENDER_VIEW_TYPE));
             return SENDER_VIEW_TYPE;

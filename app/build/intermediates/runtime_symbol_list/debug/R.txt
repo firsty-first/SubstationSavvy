@@ -2553,6 +2553,7 @@ int drawable notification_tile_bg 0x7f0700b3
 int drawable notify_panel_notification_icon_bg 0x7f0700b4
 int drawable outgoing_chat_bubble 0x7f0700b5
 int drawable parrot 0x7f0700b6
+int drawable send_24 0x7f0700be
 int drawable suggestion 0x7f0700b7
 int drawable test_custom_background 0x7f0700b8
 int drawable test_level_drawable 0x7f0700b9

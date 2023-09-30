@@ -4,6 +4,16 @@ public class messagesModel {
     String uId,messages;
     Long timestamp;
 
+    public Boolean getBot() {
+        return isBot;
+    }
+
+    public void setBot(Boolean bot) {
+        isBot = bot;
+    }
+
+    Boolean isBot;
+
     public messagesModel(String uId, String messages, Long timestamp) {
         this.uId = uId;
         this.messages = messages;

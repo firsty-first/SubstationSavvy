@@ -2554,6 +2554,7 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable outgoing_chat_bubble
 drawable parrot
+drawable send_24
 drawable suggestion
 drawable test_custom_background
 drawable test_level_drawable

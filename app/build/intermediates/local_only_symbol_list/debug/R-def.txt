@@ -17,6 +17,7 @@ drawable ic_launcher_foreground
 drawable incoming_chat_bubble
 drawable outgoing_chat_bubble
 drawable parrot
+drawable send_24
 drawable suggestion
 drawable welcome
 drawable welcome1
