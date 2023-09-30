@@ -100,12 +100,12 @@ else
         }
     }
     public class senderViewHolder extends RecyclerView.ViewHolder{
-        TextView sendermsg,senderTime;
+        TextView sendermsg;
 
         public senderViewHolder(@NonNull View itemView) {
             super(itemView);
             sendermsg=itemView.findViewById(R.id.messagesender);
-            senderTime=itemView.findViewById(R.id.timestampSend);
+
         }
     }
 }

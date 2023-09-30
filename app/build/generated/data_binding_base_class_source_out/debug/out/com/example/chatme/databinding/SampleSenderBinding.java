@@ -26,15 +26,11 @@ public final class SampleSenderBinding implements ViewBinding {
   @NonNull
   public final TextView messagesender;
 
-  @NonNull
-  public final TextView timestampSend;
-
   private SampleSenderBinding(@NonNull RelativeLayout rootView, @NonNull Guideline guide,
-      @NonNull TextView messagesender, @NonNull TextView timestampSend) {
+      @NonNull TextView messagesender) {
     this.rootView = rootView;
     this.guide = guide;
     this.messagesender = messagesender;
-    this.timestampSend = timestampSend;
   }
 
   @Override
@@ -76,14 +72,7 @@ public final class SampleSenderBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.timestampSend;
-      TextView timestampSend = ViewBindings.findChildViewById(rootView, id);
-      if (timestampSend == null) {
-        break missingId;
-      }
-
-      return new SampleSenderBinding((RelativeLayout) rootView, guide, messagesender,
-          timestampSend);
+      return new SampleSenderBinding((RelativeLayout) rootView, guide, messagesender);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

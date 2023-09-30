@@ -45,7 +45,6 @@ id signIn_tv
 id signin_fb
 id tabLayout
 id timestampRecieved
-id timestampSend
 id toolbar
 id userImg
 id userName

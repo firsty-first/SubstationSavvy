@@ -7,9 +7,11 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.example.chatme.Adapter.UserAdapter;
 import com.example.chatme.databinding.FragmentChatBinding;
@@ -20,6 +22,13 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
+import okhttp3.OkHttpClient;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
+
 
 public class chatFragment extends Fragment {
     private static final String ARG_PARAM1 = "param1";
@@ -29,8 +38,12 @@ public class chatFragment extends Fragment {
     private String mParam1;
     private String mParam2;
     FragmentChatBinding binding;
+    private final String baseUrl = "https://testapi-8skm.onrender.com";
+
     ArrayList<UserModel> arrayList=new ArrayList<>();
     FirebaseDatabase database;
+    private ApiService apiService;
+    Retrofit retrofit;
 
     public chatFragment() {
         // Required empty public constructor
@@ -54,6 +67,14 @@ public class chatFragment extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
         database=FirebaseDatabase.getInstance();
+        OkHttpClient okHttpClient = new OkHttpClient.Builder()
+                .build();
+                retrofit = new Retrofit.Builder()
+                .baseUrl(baseUrl)
+                .client(okHttpClient)
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+        apiService = retrofit.create(ApiService.class);
     }
 
     @Override
@@ -65,6 +86,12 @@ public class chatFragment extends Fragment {
 //        binding.chatRv.setAdapter(adapter);
 //        LinearLayoutManager layoutManager=new LinearLayoutManager(getContext());
 //        binding.chatRv.setLayoutManager(layoutManager);
+        binding.chabotimage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                checkHealth();
+            }
+        });
         binding.chatwithbot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -102,4 +129,28 @@ public class chatFragment extends Fragment {
 
       return  binding.getRoot();
     }
+
+    void checkHealth()
+    {
+        Call<PredictionResponse> welcomeMessageCall = apiService.getWelcomeMessage();
+        welcomeMessageCall.enqueue(new Callback<PredictionResponse>() {
+
+            @Override
+            public void onResponse(Call<PredictionResponse> call, Response<PredictionResponse> response) {
+                Log.d("result",response.body().toString());
+                Toast.makeText(getContext(), response.body().getMessage(), Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onFailure(Call<PredictionResponse> call, Throwable t) {
+                t.printStackTrace();
+                Log.d("result",t.toString());
+
+                // Handle failure
+            }
+
+        });
+
+    }
+
 }

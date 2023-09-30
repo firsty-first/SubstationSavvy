@@ -20,15 +20,13 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#0F9D58"
+            android:background="#16425F"
             android:minHeight="?attr/actionBarSize"
             android:theme="?attr/actionBarTheme"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-
-
             app:titleTextColor="#ffff" />
 
         <ImageView
@@ -60,6 +58,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="name"
+            android:textColor="@color/white"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="@+id/toolbar"
             app:layout_constraintEnd_toEndOf="parent"
@@ -79,7 +78,9 @@
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/toolbar"
-            app:layout_constraintVertical_bias="1.0">
+            app:layout_constraintVertical_bias="1.0"
+            android:backgroundTint="#AE16073C"
+            >
 
         </androidx.recyclerview.widget.RecyclerView>
 
@@ -100,6 +101,9 @@
                 android:background="@drawable/chat_bg"
                 android:ems="10"
                 android:hint="write here"
+                android:layout_marginStart="5dp"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
                 android:inputType="text"
                 android:padding="10dp" />
 
@@ -107,7 +111,7 @@
                 android:id="@+id/sendBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 app:srcCompat="@drawable/parrot" />
         </LinearLayout>
 

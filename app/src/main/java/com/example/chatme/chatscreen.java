@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 import com.example.chatme.Adapter.ChatAdapter;
 import com.example.chatme.databinding.ChatscreenUiActivityBinding;
@@ -21,6 +22,13 @@ import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 import java.util.Date;
 
+import okhttp3.OkHttpClient;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
+
 public class chatscreen extends AppCompatActivity {
     ChatscreenUiActivityBinding binding;
     FirebaseDatabase database;
@@ -29,6 +37,11 @@ public class chatscreen extends AppCompatActivity {
     String senderId;
     ArrayList<messagesModel> messagesModels;
     ChatAdapter chatAdapter;
+    private ApiService apiService;
+    Retrofit retrofit;
+    private final String baseUrl = "https://testapi-8skm.onrender.com";
+String prediction;
+
     @Override
     protected void onStart() {
         super.onStart();
@@ -47,6 +60,14 @@ public class chatscreen extends AppCompatActivity {
         binding=ChatscreenUiActivityBinding.inflate(getLayoutInflater());
 
         setContentView(binding.getRoot());
+        OkHttpClient okHttpClient = new OkHttpClient.Builder()
+                .build();
+        retrofit = new Retrofit.Builder()
+                .baseUrl(baseUrl)
+                .client(okHttpClient)
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+        apiService = retrofit.create(ApiService.class);
         database=FirebaseDatabase.getInstance();
         auth=FirebaseAuth.getInstance();
       senderId=auth.getUid();
@@ -76,6 +97,8 @@ reciverRoom=recieverId+senderId;
             @Override
             public void onClick(View view) {
                 storeMsgIndatabase();
+                String msg=binding.editTextText.getText().toString();
+                godpleaseHelp(msg);
             }
             });
 
@@ -134,5 +157,50 @@ Log.d("db","Dberror");
                             });
                 }}
 
+    String godpleaseHelp(String usermessage)
+    {
+        Log.d("check","got into godplzhelp");
+        Log.d("here is the uri",usermessage);
 
+
+// Create a ModelInput object with the necessary data
+        Log.d("uriiiiiiii check mid",usermessage);
+        ModelInput input = new ModelInput(usermessage);
+        input.setMessage(usermessage);
+        Log.d("uriiiiiiii chek after mid",input.getMessage().toString());
+
+        //input.setImgUrl("https://example.com/image.jpg"); // Replace with your image URL
+// Make the API call
+        Call<String> call = apiService.getPredictionString(input);
+        call.enqueue(new Callback<String>() {
+
+            @Override
+            public void onResponse(Call<String> call, Response<String> response) {
+                Log.i("checkkkkkk","api call godHelp");
+                Log.i("checkkkkkk",input.getMessage());
+                if (response.isSuccessful()) {
+                    // Handle the string response here
+                    prediction = response.body();
+                    Toast.makeText(getApplicationContext(), prediction, Toast.LENGTH_SHORT).show();
+
+                    // Example: Display the prediction in a TextView
+                    Log.d("god",prediction);
+                } else {
+                    // Handle error responses
+                    // Example: Display an error message
+                    prediction="api error";
+                    Log.d("god",prediction);
+
+                }
+            }
+
+            @Override
+            public void onFailure(Call<String> call, Throwable t) {
+                // Handle network or other errors
+                // Example: Display a network error message
+                Log.d("Network Error: " , t.getMessage());
+            }
+        });
+        return prediction;
+    }
 }

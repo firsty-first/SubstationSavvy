@@ -89,6 +89,7 @@
                 app:cardCornerRadius="8dp"
                 app:cardUseCompatPadding="true"
                 android:paddingVertical="5dp"
+                android:layout_marginBottom="15dp"
                 android:layout_height="wrap_content">
 
                 <EditText

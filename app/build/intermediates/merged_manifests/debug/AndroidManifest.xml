@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="24"
+        android:minSdkVersion="25"
         android:targetSdkVersion="33" />
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -28,6 +28,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/chaticon"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/Theme.Chatme" >
         <activity
             android:name="com.example.chatme.chatscreen"
