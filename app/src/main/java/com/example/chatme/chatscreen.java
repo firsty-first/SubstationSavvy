@@ -3,8 +3,10 @@ package com.example.chatme;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
@@ -124,7 +126,23 @@ database.getReference().child("chats")
 Log.d("db","Dberror");
             }
         });
+binding.chatRv.setOnFlingListener(new RecyclerView.OnFlingListener() {
+    @Override
+    public boolean onFling(int velocityX, int velocityY) {
+        return true;
     }
+});
+binding.chatRv.setOnLongClickListener(new View.OnLongClickListener() {
+    @Override
+    public boolean onLongClick(View view) {
+        TextToSpeech textToSp;
+        Toast.makeText(getApplicationContext(), "longgggggggggg", Toast.LENGTH_SHORT).show();
+        return false;
+    }
+});
+
+    }//end of oncreate
+
 
 
     void storeMsgIndatabase()

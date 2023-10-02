@@ -10,80 +10,82 @@
 9        android:targetSdkVersion="33" />
 9-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml
 10
-11    <uses-permission android:name="android.permission.INTERNET" />
-11-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\GAURAV\.gradle\caches\transforms-3\c684886053b01c9ee181549294ae56ca\transformed\firebase-auth-22.1.1\AndroidManifest.xml:25:5-67
-11-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\GAURAV\.gradle\caches\transforms-3\c684886053b01c9ee181549294ae56ca\transformed\firebase-auth-22.1.1\AndroidManifest.xml:25:22-64
-12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-12-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\GAURAV\.gradle\caches\transforms-3\c684886053b01c9ee181549294ae56ca\transformed\firebase-auth-22.1.1\AndroidManifest.xml:26:5-79
-12-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\GAURAV\.gradle\caches\transforms-3\c684886053b01c9ee181549294ae56ca\transformed\firebase-auth-22.1.1\AndroidManifest.xml:26:22-76
-13
-14    <permission
-14-->[androidx.core:core:1.9.0] C:\Users\GAURAV\.gradle\caches\transforms-3\57c95f7bce2a4c36ea305cb3932f8371\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
-15        android:name="com.example.chatme.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-15-->[androidx.core:core:1.9.0] C:\Users\GAURAV\.gradle\caches\transforms-3\57c95f7bce2a4c36ea305cb3932f8371\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
-16        android:protectionLevel="signature" />
-16-->[androidx.core:core:1.9.0] C:\Users\GAURAV\.gradle\caches\transforms-3\57c95f7bce2a4c36ea305cb3932f8371\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
-17
-18    <uses-permission android:name="com.example.chatme.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-18-->[androidx.core:core:1.9.0] C:\Users\GAURAV\.gradle\caches\transforms-3\57c95f7bce2a4c36ea305cb3932f8371\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
-18-->[androidx.core:core:1.9.0] C:\Users\GAURAV\.gradle\caches\transforms-3\57c95f7bce2a4c36ea305cb3932f8371\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
-19
-20    <application
-20-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:5:5-33:19
-21        android:allowBackup="true"
-21-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:6:9-35
-22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-22-->[androidx.core:core:1.9.0] C:\Users\GAURAV\.gradle\caches\transforms-3\57c95f7bce2a4c36ea305cb3932f8371\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
-23        android:dataExtractionRules="@xml/data_extraction_rules"
-23-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:7:9-65
-24        android:debuggable="true"
-25        android:extractNativeLibs="false"
-26        android:fullBackupContent="@xml/backup_rules"
-26-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:8:9-54
-27        android:icon="@mipmap/chaticon"
-27-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:9:9-40
-28        android:label="@string/app_name"
-28-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:10:9-41
-29        android:roundIcon="@mipmap/chaticon"
-29-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:11:9-45
-30        android:supportsRtl="true"
-30-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:12:9-35
-31        android:testOnly="true"
+11    <uses-permission android:name="android.permission.WAKE_LOCK" />
+11-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:4:1-63
+11-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:4:18-61
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\GAURAV\.gradle\caches\transforms-3\c684886053b01c9ee181549294ae56ca\transformed\firebase-auth-22.1.1\AndroidManifest.xml:25:5-67
+12-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\GAURAV\.gradle\caches\transforms-3\c684886053b01c9ee181549294ae56ca\transformed\firebase-auth-22.1.1\AndroidManifest.xml:25:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\GAURAV\.gradle\caches\transforms-3\c684886053b01c9ee181549294ae56ca\transformed\firebase-auth-22.1.1\AndroidManifest.xml:26:5-79
+13-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\GAURAV\.gradle\caches\transforms-3\c684886053b01c9ee181549294ae56ca\transformed\firebase-auth-22.1.1\AndroidManifest.xml:26:22-76
+14
+15    <permission
+15-->[androidx.core:core:1.9.0] C:\Users\GAURAV\.gradle\caches\transforms-3\57c95f7bce2a4c36ea305cb3932f8371\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+16        android:name="com.example.chatme.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+16-->[androidx.core:core:1.9.0] C:\Users\GAURAV\.gradle\caches\transforms-3\57c95f7bce2a4c36ea305cb3932f8371\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+17        android:protectionLevel="signature" />
+17-->[androidx.core:core:1.9.0] C:\Users\GAURAV\.gradle\caches\transforms-3\57c95f7bce2a4c36ea305cb3932f8371\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+18
+19    <uses-permission android:name="com.example.chatme.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+19-->[androidx.core:core:1.9.0] C:\Users\GAURAV\.gradle\caches\transforms-3\57c95f7bce2a4c36ea305cb3932f8371\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+19-->[androidx.core:core:1.9.0] C:\Users\GAURAV\.gradle\caches\transforms-3\57c95f7bce2a4c36ea305cb3932f8371\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+20
+21    <application
+21-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:6:5-34:19
+22        android:allowBackup="true"
+22-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:7:9-35
+23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+23-->[androidx.core:core:1.9.0] C:\Users\GAURAV\.gradle\caches\transforms-3\57c95f7bce2a4c36ea305cb3932f8371\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+24        android:dataExtractionRules="@xml/data_extraction_rules"
+24-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:8:9-65
+25        android:debuggable="true"
+26        android:extractNativeLibs="false"
+27        android:fullBackupContent="@xml/backup_rules"
+27-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:9:9-54
+28        android:icon="@mipmap/chaticon"
+28-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:10:9-40
+29        android:label="@string/app_name"
+29-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:11:9-41
+30        android:roundIcon="@mipmap/chaticon"
+30-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:12:9-45
+31        android:supportsRtl="true"
+31-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:13:9-35
 32        android:theme="@style/Theme.Chatme" >
-32-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:13:9-44
+32-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:14:9-44
 33        <activity
-33-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:15:9-17:40
+33-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:16:9-18:40
 34            android:name="com.example.chatme.chatscreen"
-34-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:16:13-39
+34-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:17:13-39
 35            android:exported="false" />
-35-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:17:13-37
+35-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:18:13-37
 36        <activity
-36-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:18:9-20:40
+36-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:19:9-21:40
 37            android:name="com.example.chatme.HomeActivity"
-37-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:19:13-41
+37-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:20:13-41
 38            android:exported="false" />
-38-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:20:13-37
+38-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:21:13-37
 39        <activity
-39-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:21:9-23:40
+39-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:22:9-24:40
 40            android:name="com.example.chatme.signUpActivity"
-40-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:22:13-43
+40-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:23:13-43
 41            android:exported="false" />
-41-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:23:13-37
+41-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:24:13-37
 42        <activity
-42-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:24:9-32:20
+42-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:25:9-33:20
 43            android:name="com.example.chatme.signInActivity"
-43-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:25:13-43
+43-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:26:13-43
 44            android:exported="true" >
-44-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:26:13-36
+44-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:27:13-36
 45            <intent-filter>
-45-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:27:13-31:29
+45-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:28:13-32:29
 46                <action android:name="android.intent.action.MAIN" />
-46-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:28:17-69
-46-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:28:25-66
+46-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:29:17-69
+46-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:29:25-66
 47
 48                <category android:name="android.intent.category.LAUNCHER" />
-48-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:30:17-77
-48-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:30:27-74
+48-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:31:17-77
+48-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:31:27-74
 49            </intent-filter>
 50        </activity>
 51

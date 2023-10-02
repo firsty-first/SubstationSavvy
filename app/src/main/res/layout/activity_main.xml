@@ -130,28 +130,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/signIn_google"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="1dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_weight="2"
-                    android:text="Google"
-                    app:cornerRadius="10dp" />
-
-                <Button
-                    android:id="@+id/signin_fb"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_weight="1"
-                    android:text="Facebook"
-                    app:cornerRadius="10dp" />
-            </LinearLayout>
+                android:orientation="horizontal"/>
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>

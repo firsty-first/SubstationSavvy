@@ -1,11 +1,19 @@
 [
     {
+        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-mergeDebugResources-33:\\layout\\chatcard.xml",
+        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-36:\\layout\\chatcard.xml"
+    },
+    {
         "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-mergeDebugResources-33:\\layout\\sample_sender.xml",
         "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-36:\\layout\\sample_sender.xml"
     },
     {
         "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-mergeDebugResources-33:\\layout\\fragment_chat.xml",
         "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-36:\\layout\\fragment_chat.xml"
+    },
+    {
+        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-mergeDebugResources-33:\\layout\\activity_home.xml",
+        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-36:\\layout\\activity_home.xml"
     },
     {
         "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-mergeDebugResources-33:\\layout\\fragment_story.xml",
@@ -16,20 +24,16 @@
         "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-36:\\layout\\chatscreen_ui_activity.xml"
     },
     {
+        "merged": "com.example.chatme.app-mergeDebugResources-33:/layout/chatscreen_ui_activity.xml",
+        "source": "com.example.chatme.app-main-36:/layout/chatscreen_ui_activity.xml"
+    },
+    {
         "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-mergeDebugResources-33:\\layout\\fragment_calll.xml",
         "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-36:\\layout\\fragment_calll.xml"
     },
     {
-        "merged": "com.example.chatme.app-mergeDebugResources-33:/layout/fragment_chat.xml",
-        "source": "com.example.chatme.app-main-36:/layout/fragment_chat.xml"
-    },
-    {
         "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-mergeDebugResources-33:\\layout\\activity_main.xml",
         "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-36:\\layout\\activity_main.xml"
-    },
-    {
-        "merged": "com.example.chatme.app-mergeDebugResources-33:/layout/activity_home.xml",
-        "source": "com.example.chatme.app-main-36:/layout/activity_home.xml"
     },
     {
         "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-mergeDebugResources-33:\\layout\\sample_reciever.xml",
@@ -38,13 +42,5 @@
     {
         "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-mergeDebugResources-33:\\layout\\activity_sign_in.xml",
         "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-36:\\layout\\activity_sign_in.xml"
-    },
-    {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-mergeDebugResources-33:\\layout\\chatcard.xml",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-36:\\layout\\chatcard.xml"
-    },
-    {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-mergeDebugResources-33:\\layout\\activity_home.xml",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-36:\\layout\\activity_home.xml"
     }
 ]
