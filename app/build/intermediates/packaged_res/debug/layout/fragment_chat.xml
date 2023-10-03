@@ -4,61 +4,99 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linear"
     android:layout_width="match_parent"
-    android:backgroundTint="#6D6DD0"
+  android:background="@color/hometheme"
 
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingStart="4dp"
+
     tools:context=".chatFragment">
 
 
-    <androidx.cardview.widget.CardView
+
+
+
+
+
+
+
+
+
+
+
+
+    <FrameLayout
+        android:id="@+id/customCardViewContainer"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#0A0A52"
-        app:cardPreventCornerOverlap="true"
-        android:elevation="7dp"
-        android:layout_gravity="start"
-        app:cardCornerRadius="5dp"
+        android:layout_height="wrap_content">
 
-        app:cardUseCompatPadding="true">
+        <!-- Custom background shape -->
+        <ImageView
+            android:id="@+id/customBackgroundShape"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/cardtwocorner"
+            android:scaleType="fitXY" />
 
-        <LinearLayout
+        <!-- CardView -->
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="35dp"
+            app:cardPreventCornerOverlap="false"
+android:backgroundTint="@color/topcard"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="100dp"
+            >
 
-            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
 
-            <ImageView
-                android:id="@+id/chabotimage"
+                android:orientation="horizontal">
 
+                <ImageView
+                    android:id="@+id/chabotimage"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/electricianlogo" />
+
+                <ImageView
+
+                    android:layout_width="160dp"
+                    android:layout_height="138dp"
+
+
+                    android:src="@drawable/welcome1" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/chatwithbot"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/parrot"
-                android:src="@drawable/chatbot" />
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="@color/topcard"
+                android:text="chatwithbot" />
 
-            <ImageView
-
-                android:layout_width="wrap_content"
-                android:layout_height="124dp"
-
-
-                android:src="@drawable/welcome1" />
-
-        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
 
 
-        <Button
-            android:id="@+id/chatwithbot"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:backgroundTint="#16367A"
 
-            android:text="chatwithbot" />
 
-    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
 
     <ScrollView
         android:layout_width="match_parent"
@@ -67,10 +105,10 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#121266"
+           app:cardBackgroundColor="@color/hometheme"
             android:elevation="10dp"
             app:cardCornerRadius="12dp"
-            app:cardUseCompatPadding="true">
+            app:cardUseCompatPadding="false">
 
             <LinearLayout
                 android:layout_width="match_parent"

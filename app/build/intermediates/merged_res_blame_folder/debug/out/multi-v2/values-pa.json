@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.chatme.app-mergeDebugResources-32:/values-pa/values-pa.xml",
+            "outputFile": "com.example.chatme.app-mergeDebugResources-33:/values-pa/values-pa.xml",
             "map": [
                 {
                     "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-3\\7a04553ca9af6ddbf476fcc7c860a00a\\transformed\\material-1.5.0\\res\\values-pa\\values-pa.xml",

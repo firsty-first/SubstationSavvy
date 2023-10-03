@@ -5,6 +5,7 @@ package com.example.chatme.Adapter;
 import android.content.Context;
 import android.speech.tts.TextToSpeech;
 import android.speech.tts.UtteranceProgressListener;
+import android.speech.tts.Voice;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,7 +22,9 @@ import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Locale;
+import java.util.Set;
 
 public class ChatAdapter extends RecyclerView.Adapter{
     ArrayList<messagesModel> messageModels;
@@ -99,6 +102,14 @@ messagesModel model= messageModels.get(position);
             public boolean onLongClick(View view) {
                 String text;
                 text= model.getMessages();
+
+                
+
+                Locale desiredLocale = new Locale("en", "IN");
+
+                textToSpeech.setLanguage(desiredLocale);
+
+
                 if (!text.isEmpty()) {
                     // Add a unique utterance ID
                     String utteranceId = "utteranceId";
@@ -129,7 +140,6 @@ textToSpeech.shutdown();
                 });
 
 
-                Toast.makeText(context, model.getMessages(), Toast.LENGTH_SHORT).show();
                 return true;
             }
         });

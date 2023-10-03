@@ -4,7 +4,9 @@
     <color name="blue_teal">#0D3651</color>
     <color name="chat_editText">#8E91BF</color>
     <color name="errorHint">#AC1B1B</color>
+    <color name="hometheme">#0A0A52</color>
     <color name="primary">#117C45</color>
+    <color name="topcard">#6F04AD</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">SubstationSavvy</string>
     <string name="default_web_client_id" translatable="false">691741876904-rpjdvnlsov38l4ar2lu5o50c10nk7c9l.apps.googleusercontent.com</string>

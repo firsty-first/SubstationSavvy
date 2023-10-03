@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
@@ -27,13 +28,22 @@ public final class FragmentChatBinding implements ViewBinding {
   public final Button chatwithbot;
 
   @NonNull
+  public final ImageView customBackgroundShape;
+
+  @NonNull
+  public final FrameLayout customCardViewContainer;
+
+  @NonNull
   public final LinearLayout linear;
 
   private FragmentChatBinding(@NonNull LinearLayout rootView, @NonNull ImageView chabotimage,
-      @NonNull Button chatwithbot, @NonNull LinearLayout linear) {
+      @NonNull Button chatwithbot, @NonNull ImageView customBackgroundShape,
+      @NonNull FrameLayout customCardViewContainer, @NonNull LinearLayout linear) {
     this.rootView = rootView;
     this.chabotimage = chabotimage;
     this.chatwithbot = chatwithbot;
+    this.customBackgroundShape = customBackgroundShape;
+    this.customCardViewContainer = customCardViewContainer;
     this.linear = linear;
   }
 
@@ -76,9 +86,22 @@ public final class FragmentChatBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.customBackgroundShape;
+      ImageView customBackgroundShape = ViewBindings.findChildViewById(rootView, id);
+      if (customBackgroundShape == null) {
+        break missingId;
+      }
+
+      id = R.id.customCardViewContainer;
+      FrameLayout customCardViewContainer = ViewBindings.findChildViewById(rootView, id);
+      if (customCardViewContainer == null) {
+        break missingId;
+      }
+
       LinearLayout linear = (LinearLayout) rootView;
 
-      return new FragmentChatBinding((LinearLayout) rootView, chabotimage, chatwithbot, linear);
+      return new FragmentChatBinding((LinearLayout) rootView, chabotimage, chatwithbot,
+          customBackgroundShape, customCardViewContainer, linear);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

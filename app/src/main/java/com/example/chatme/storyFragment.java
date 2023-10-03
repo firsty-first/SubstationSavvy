@@ -8,6 +8,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.chatme.databinding.FragmentChatBinding;
+import com.example.chatme.databinding.FragmentStoryBinding;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link storyFragment#newInstance} factory method to
@@ -23,7 +26,7 @@ public class storyFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-
+    FragmentStoryBinding binding;
     public storyFragment() {
         // Required empty public constructor
     }

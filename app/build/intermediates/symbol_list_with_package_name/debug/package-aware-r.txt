@@ -708,6 +708,27 @@ attr listPreferredItemPaddingRight
 attr listPreferredItemPaddingStart
 attr logo
 attr logoDescription
+attr lottieAnimationViewStyle
+attr lottie_asyncUpdates
+attr lottie_autoPlay
+attr lottie_cacheComposition
+attr lottie_clipToCompositionBounds
+attr lottie_colorFilter
+attr lottie_defaultFontFileExtension
+attr lottie_enableMergePathsForKitKatAndAbove
+attr lottie_fallbackRes
+attr lottie_fileName
+attr lottie_ignoreDisabledSystemAnimations
+attr lottie_imageAssetsFolder
+attr lottie_loop
+attr lottie_progress
+attr lottie_rawRes
+attr lottie_renderMode
+attr lottie_repeatCount
+attr lottie_repeatMode
+attr lottie_speed
+attr lottie_url
+attr lottie_useCompositionFrameRate
 attr marginHorizontal
 attr materialAlertDialogBodyTextStyle
 attr materialAlertDialogButtonSpacerVisibility
@@ -1297,6 +1318,7 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color hometheme
 color m3_appbar_overlay_color
 color m3_assist_chip_icon_tint_color
 color m3_assist_chip_stroke_color
@@ -1792,6 +1814,7 @@ color test_mtrl_calendar_day
 color test_mtrl_calendar_day_selected
 color tooltip_background_dark
 color tooltip_background_light
+color topcard
 color white
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
@@ -2470,6 +2493,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable cardtwocorner
 drawable chat_bg
 drawable chatbot
 drawable common_full_open_on_phone
@@ -2496,6 +2520,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable electricianlogo
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable historyicon
@@ -2642,6 +2667,7 @@ id allStates
 id always
 id animateToEnd
 id animateToStart
+id animation_view
 id antiClockwise
 id anticipate
 id arc
@@ -2651,6 +2677,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id automatic
 id backbtn
 id barrier
 id baseline
@@ -2712,6 +2739,8 @@ id cos
 id counterclockwise
 id currentState
 id custom
+id customBackgroundShape
+id customCardViewContainer
 id customPanel
 id cut
 id dark
@@ -2734,6 +2763,7 @@ id disableHome
 id disableIntraAutoTransition
 id disablePostScroll
 id disableScroll
+id disabled
 id disjoint
 id dragAnticlockwise
 id dragClockwise
@@ -2754,6 +2784,7 @@ id editTextTextPassword
 id edit_query
 id edittext_name
 id elastic
+id enabled
 id end
 id endToStart
 id enterAlways
@@ -2783,6 +2814,7 @@ id grouping
 id groups
 id guide
 id guideline
+id hardware
 id header_title
 id hideable
 id home
@@ -2819,6 +2851,7 @@ id linear
 id listMode
 id list_item
 id logout
+id lottie_layer_name
 id masked
 id match_constraint
 id match_parent
@@ -2921,6 +2954,8 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id restart
+id reverse
 id reverseSawtooth
 id right
 id rightToLeft
@@ -2970,6 +3005,7 @@ id snackbar_action
 id snackbar_text
 id snap
 id snapMargins
+id software
 id south
 id spacer
 id special_effects_controller_view_tag
@@ -3164,6 +3200,7 @@ layout abc_tooltip
 layout activity_home
 layout activity_main
 layout activity_sign_in
+layout activity_splashscreen
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout chatcard
@@ -3265,6 +3302,9 @@ mipmap chaticon
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
+raw bot
+raw botanimation
+raw electrician
 raw firebase_common_keep
 string abc_action_bar_home_description
 string abc_action_bar_up_description
@@ -4525,6 +4565,7 @@ styleable LinearLayoutCompat_Layout android_layout_gravity android_layout_width 
 styleable LinearProgressIndicator indeterminateAnimationType indicatorDirectionLinear
 styleable ListPopupWindow android_dropDownHorizontalOffset android_dropDownVerticalOffset
 styleable LoadingImageView circleCrop imageAspectRatio imageAspectRatioAdjust
+styleable LottieAnimationView lottie_asyncUpdates lottie_autoPlay lottie_cacheComposition lottie_clipToCompositionBounds lottie_colorFilter lottie_defaultFontFileExtension lottie_enableMergePathsForKitKatAndAbove lottie_fallbackRes lottie_fileName lottie_ignoreDisabledSystemAnimations lottie_imageAssetsFolder lottie_loop lottie_progress lottie_rawRes lottie_renderMode lottie_repeatCount lottie_repeatMode lottie_speed lottie_url lottie_useCompositionFrameRate
 styleable MaterialAlertDialog backgroundInsetBottom backgroundInsetEnd backgroundInsetStart backgroundInsetTop
 styleable MaterialAlertDialogTheme materialAlertDialogBodyTextStyle materialAlertDialogButtonSpacerVisibility materialAlertDialogTheme materialAlertDialogTitleIconStyle materialAlertDialogTitlePanelStyle materialAlertDialogTitleTextStyle
 styleable MaterialAutoCompleteTextView android_inputType
