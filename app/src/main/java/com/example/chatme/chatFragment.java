@@ -92,7 +92,7 @@ public class chatFragment extends Fragment {
                 checkHealth();
             }
         });
-        binding.chatwithbot.setOnClickListener(new View.OnClickListener() {
+        binding.customCardViewContainer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(getContext(), chatscreen.class);

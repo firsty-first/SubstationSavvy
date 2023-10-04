@@ -2484,6 +2484,7 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable backbtn
 drawable baseline_analytics_24
+drawable baseline_record_voice_over_24
 drawable book
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -3101,6 +3102,7 @@ id view_tree_view_model_store_owner
 id viewpager
 id visible
 id visible_removing_fragment_view_tag
+id voiceassistbtn
 id west
 id wide
 id withText

@@ -47,10 +47,13 @@ public final class ChatscreenUiActivityBinding implements ViewBinding {
   @NonNull
   public final ImageView userImage;
 
+  @NonNull
+  public final ImageView voiceassistbtn;
+
   private ChatscreenUiActivityBinding(@NonNull LinearLayout rootView, @NonNull ImageView backbtn,
       @NonNull RecyclerView chatRv, @NonNull EditText editTextText, @NonNull LinearLayout linear,
       @NonNull TextView name, @NonNull ImageView sendBtn, @NonNull Toolbar toolbar,
-      @NonNull ImageView userImage) {
+      @NonNull ImageView userImage, @NonNull ImageView voiceassistbtn) {
     this.rootView = rootView;
     this.backbtn = backbtn;
     this.chatRv = chatRv;
@@ -60,6 +63,7 @@ public final class ChatscreenUiActivityBinding implements ViewBinding {
     this.sendBtn = sendBtn;
     this.toolbar = toolbar;
     this.userImage = userImage;
+    this.voiceassistbtn = voiceassistbtn;
   }
 
   @Override
@@ -137,8 +141,14 @@ public final class ChatscreenUiActivityBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.voiceassistbtn;
+      ImageView voiceassistbtn = ViewBindings.findChildViewById(rootView, id);
+      if (voiceassistbtn == null) {
+        break missingId;
+      }
+
       return new ChatscreenUiActivityBinding((LinearLayout) rootView, backbtn, chatRv, editTextText,
-          linear, name, sendBtn, toolbar, userImage);
+          linear, name, sendBtn, toolbar, userImage, voiceassistbtn);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

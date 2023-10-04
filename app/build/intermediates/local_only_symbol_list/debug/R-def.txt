@@ -10,6 +10,7 @@ color topcard
 color white
 drawable backbtn
 drawable baseline_analytics_24
+drawable baseline_record_voice_over_24
 drawable book
 drawable cardtwocorner
 drawable chat_bg
@@ -58,6 +59,7 @@ id userImg
 id userName
 id user_image
 id viewpager
+id voiceassistbtn
 layout activity_home
 layout activity_main
 layout activity_sign_in

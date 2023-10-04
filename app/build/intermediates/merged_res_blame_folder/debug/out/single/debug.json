@@ -16,6 +16,10 @@
         "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
+        "merged": "com.example.chatme.app-merged_res-35:/drawable_baseline_record_voice_over_24.xml.flat",
+        "source": "com.example.chatme.app-main-37:/drawable/baseline_record_voice_over_24.xml"
+    },
+    {
         "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\layout_fragment_calll.xml.flat",
         "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\layout\\fragment_calll.xml"
     },
@@ -92,12 +96,16 @@
         "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\layout\\chatscreen_ui_activity.xml"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\mipmap-hdpi_chaticon.png.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\mipmap-hdpi\\chaticon.png"
+        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\drawable_baseline_record_voice_over_24.xml.flat",
+        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\drawable\\baseline_record_voice_over_24.xml"
     },
     {
         "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\drawable_parrot.png.flat",
         "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\drawable\\parrot.png"
+    },
+    {
+        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\mipmap-hdpi_chaticon.png.flat",
+        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\mipmap-hdpi\\chaticon.png"
     },
     {
         "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\layout_sample_reciever.xml.flat",
@@ -138,6 +146,10 @@
     {
         "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\layout_activity_home.xml.flat",
         "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "com.example.chatme.app-merged_res-35:/drawable_send_24.xml.flat",
+        "source": "com.example.chatme.app-main-37:/drawable/send_24.xml"
     },
     {
         "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\drawable_historyicon.xml.flat",
@@ -182,10 +194,6 @@
     {
         "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\xml_data_extraction_rules.xml.flat",
         "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\xml\\data_extraction_rules.xml"
-    },
-    {
-        "merged": "com.example.chatme.app-merged_res-35:/layout_fragment_story.xml.flat",
-        "source": "com.example.chatme.app-main-37:/layout/fragment_story.xml"
     },
     {
         "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\raw_bot.json.flat",

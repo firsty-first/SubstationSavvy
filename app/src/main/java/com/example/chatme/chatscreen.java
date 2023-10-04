@@ -5,8 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.speech.RecognizerIntent;
 import android.speech.tts.TextToSpeech;
+import android.telephony.PhoneNumberFormattingTextWatcher;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
@@ -23,6 +28,7 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import okhttp3.OkHttpClient;
 import retrofit2.Call;
@@ -43,7 +49,7 @@ public class chatscreen extends AppCompatActivity {
     Retrofit retrofit;
     private final String baseUrl = "https://testapi-8skm.onrender.com";
 String prediction;
-
+public  String spokenText;
     @Override
     protected void onStart() {
         super.onStart();
@@ -78,6 +84,34 @@ String prediction;
         String recieverName=getIntent().getStringExtra("userName");
 binding.name.setText(recieverName);
         Picasso.get().load(recieverImg).placeholder(R.drawable.parrot).into(binding.userImage);
+        String m=binding.editTextText.getText().toString();
+        binding.editTextText.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                String m=binding.editTextText.getText().toString();
+                if(m.length()>0)
+                {
+                    Log.d("visiblity","check yes");
+                    binding.sendBtn.setVisibility(View.GONE);
+                    binding.voiceassistbtn.setVisibility(View.VISIBLE);
+                }
+                else
+                {
+                    binding.sendBtn.setVisibility(View.VISIBLE);
+                    binding.voiceassistbtn.setVisibility(View.GONE);
+                }
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
         binding.backbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -118,6 +152,7 @@ database.getReference().child("chats")
                         Log.d("hii",model.getMessages());
                     }
                 chatAdapter.notifyDataSetChanged();
+              binding.chatRv.scrollToPosition(messagesModels.size() - 1);
 
             }
 
@@ -126,24 +161,10 @@ database.getReference().child("chats")
 Log.d("db","Dberror");
             }
         });
-binding.chatRv.setOnFlingListener(new RecyclerView.OnFlingListener() {
-    @Override
-    public boolean onFling(int velocityX, int velocityY) {
-        return true;
-    }
-});
-binding.chatRv.setOnLongClickListener(new View.OnLongClickListener() {
-    @Override
-    public boolean onLongClick(View view) {
-        TextToSpeech textToSp;
-        Toast.makeText(getApplicationContext(), "longgggggggggg", Toast.LENGTH_SHORT).show();
-        return false;
-    }
-});
+
+
 
     }//end of oncreate
-
-
 
     void storeMsgIndatabase()
     {
@@ -180,8 +201,6 @@ binding.chatRv.setOnLongClickListener(new View.OnLongClickListener() {
 
     void storeBOTMsgIndatabase(String botmsg)
     {
-
-
         if(botmsg.length()>0)
         {
             final messagesModel model=new messagesModel(senderId,botmsg);
@@ -235,6 +254,7 @@ model.isBot=true;
                 if (response.isSuccessful()) {
                     // Handle the string response here
                     prediction = response.body();
+                    speechRecognizer(prediction);
                     storeBOTMsgIndatabase(prediction);
                     Toast.makeText(getApplicationContext(), prediction, Toast.LENGTH_SHORT).show();
 
@@ -258,4 +278,47 @@ model.isBot=true;
         });
         return prediction;
     }
+
+
+
+        private static final int SPEECH_REQUEST_CODE = 0;
+
+// Create an intent that can start the Speech Recognizer activity
+        private void speechRecognizer(String s) {
+        Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
+        intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,
+                RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
+// This starts the activity and populates the intent with the speech text.
+        startActivityForResult(intent, SPEECH_REQUEST_CODE);
+    }
+
+// This callback is invoked when the Speech Recognizer returns.
+// This is where you process the intent and extract the speech text from the intent.
+        @Override
+        protected void onActivityResult(int requestCode, int resultCode,
+        Intent data) {
+        if (requestCode == SPEECH_REQUEST_CODE && resultCode == RESULT_OK) {
+            List<String> results = data.getStringArrayListExtra(
+                    RecognizerIntent.EXTRA_RESULTS);
+             spokenText = results.get(0);
+            // Do something with spokenText.
+        }
+        super.onActivityResult(requestCode, resultCode, data);
+    }
+
+
+//    private void handleInput() {
+//        String input = editText.getText().toString().trim();
+//
+//        if (input.equals("1")) {
+//            imageView1.setVisibility(View.VISIBLE);
+//            imageView2.setVisibility(View.INVISIBLE);
+//        } else if (input.equals("2")) {
+//            imageView1.setVisibility(View.INVISIBLE);
+//            imageView2.setVisibility(View.VISIBLE);
+//        } else {
+//            // Handle other cases or provide feedback for invalid input
+//            // For example, you can show a Toast message.
+//        }
+//    }
 }

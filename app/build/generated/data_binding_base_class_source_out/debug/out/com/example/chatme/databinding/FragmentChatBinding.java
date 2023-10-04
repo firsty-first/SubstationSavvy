@@ -4,10 +4,10 @@ package com.example.chatme.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
@@ -25,7 +25,7 @@ public final class FragmentChatBinding implements ViewBinding {
   public final ImageView chabotimage;
 
   @NonNull
-  public final Button chatwithbot;
+  public final TextView chatwithbot;
 
   @NonNull
   public final ImageView customBackgroundShape;
@@ -37,7 +37,7 @@ public final class FragmentChatBinding implements ViewBinding {
   public final LinearLayout linear;
 
   private FragmentChatBinding(@NonNull LinearLayout rootView, @NonNull ImageView chabotimage,
-      @NonNull Button chatwithbot, @NonNull ImageView customBackgroundShape,
+      @NonNull TextView chatwithbot, @NonNull ImageView customBackgroundShape,
       @NonNull FrameLayout customCardViewContainer, @NonNull LinearLayout linear) {
     this.rootView = rootView;
     this.chabotimage = chabotimage;
@@ -81,7 +81,7 @@ public final class FragmentChatBinding implements ViewBinding {
       }
 
       id = R.id.chatwithbot;
-      Button chatwithbot = ViewBindings.findChildViewById(rootView, id);
+      TextView chatwithbot = ViewBindings.findChildViewById(rootView, id);
       if (chatwithbot == null) {
         break missingId;
       }
