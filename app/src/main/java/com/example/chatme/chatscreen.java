@@ -97,13 +97,13 @@ binding.name.setText(recieverName);
                 if(m.length()>0)
                 {
                     Log.d("visiblity","check yes");
-                    binding.sendBtn.setVisibility(View.GONE);
-                    binding.voiceassistbtn.setVisibility(View.VISIBLE);
+                    binding.sendBtn.setVisibility(View.VISIBLE);
+                    binding.voiceassistbtn.setVisibility(View.GONE);
                 }
                 else
                 {
-                    binding.sendBtn.setVisibility(View.VISIBLE);
-                    binding.voiceassistbtn.setVisibility(View.GONE);
+                    binding.sendBtn.setVisibility(View.GONE);
+                    binding.voiceassistbtn.setVisibility(View.VISIBLE);
                 }
             }
 
@@ -132,11 +132,19 @@ reciverRoom=recieverId+senderId;
         binding.sendBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                storeMsgIndatabase();
-                String msg=binding.editTextText.getText().toString();
-                getMessageFromBot(msg);
+                String msgText=binding.editTextText.getText().toString();
+                storeMsgIndatabase(msgText);
+
+              //keep this in try catch with extra precation
+                getMessageFromBot(msgText);
             }
             });
+        binding.voiceassistbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                speechRecognizer();
+            }
+        });
 
 database.getReference().child("chats")
         .child(senderRoom)
@@ -162,14 +170,12 @@ Log.d("db","Dberror");
             }
         });
 
-
-
     }//end of oncreate
 
-    void storeMsgIndatabase()
+    void storeMsgIndatabase(String msg)
     {
 
-                String msg=binding.editTextText.getText().toString();
+
                 if(msg.length()>0)
                 {
                     final messagesModel model=new messagesModel(senderId,msg);
@@ -254,7 +260,7 @@ model.isBot=true;
                 if (response.isSuccessful()) {
                     // Handle the string response here
                     prediction = response.body();
-                    speechRecognizer(prediction);
+
                     storeBOTMsgIndatabase(prediction);
                     Toast.makeText(getApplicationContext(), prediction, Toast.LENGTH_SHORT).show();
 
@@ -284,7 +290,7 @@ model.isBot=true;
         private static final int SPEECH_REQUEST_CODE = 0;
 
 // Create an intent that can start the Speech Recognizer activity
-        private void speechRecognizer(String s) {
+        private void speechRecognizer() {
         Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,
                 RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
@@ -301,9 +307,14 @@ model.isBot=true;
             List<String> results = data.getStringArrayListExtra(
                     RecognizerIntent.EXTRA_RESULTS);
              spokenText = results.get(0);
-            // Do something with spokenText.
+            storeMsgIndatabase(spokenText);
+
+            //keep this in try catch with extra precation
+            getMessageFromBot(spokenText);
+
         }
         super.onActivityResult(requestCode, resultCode, data);
+
     }
 
 
