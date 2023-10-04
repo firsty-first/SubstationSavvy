@@ -35,6 +35,7 @@ id chat_rv
 id chatwithbot
 id customBackgroundShape
 id customCardViewContainer
+id docBtn
 id editTextText
 id editTextTextEmailAddress
 id editTextTextPassword
@@ -60,6 +61,7 @@ id userName
 id user_image
 id viewpager
 id voiceassistbtn
+layout activity_documentation
 layout activity_home
 layout activity_main
 layout activity_sign_in

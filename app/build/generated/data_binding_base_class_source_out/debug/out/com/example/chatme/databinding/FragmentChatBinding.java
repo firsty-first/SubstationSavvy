@@ -34,16 +34,21 @@ public final class FragmentChatBinding implements ViewBinding {
   public final FrameLayout customCardViewContainer;
 
   @NonNull
+  public final ImageView docBtn;
+
+  @NonNull
   public final LinearLayout linear;
 
   private FragmentChatBinding(@NonNull LinearLayout rootView, @NonNull ImageView chabotimage,
       @NonNull TextView chatwithbot, @NonNull ImageView customBackgroundShape,
-      @NonNull FrameLayout customCardViewContainer, @NonNull LinearLayout linear) {
+      @NonNull FrameLayout customCardViewContainer, @NonNull ImageView docBtn,
+      @NonNull LinearLayout linear) {
     this.rootView = rootView;
     this.chabotimage = chabotimage;
     this.chatwithbot = chatwithbot;
     this.customBackgroundShape = customBackgroundShape;
     this.customCardViewContainer = customCardViewContainer;
+    this.docBtn = docBtn;
     this.linear = linear;
   }
 
@@ -98,10 +103,16 @@ public final class FragmentChatBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.docBtn;
+      ImageView docBtn = ViewBindings.findChildViewById(rootView, id);
+      if (docBtn == null) {
+        break missingId;
+      }
+
       LinearLayout linear = (LinearLayout) rootView;
 
       return new FragmentChatBinding((LinearLayout) rootView, chabotimage, chatwithbot,
-          customBackgroundShape, customCardViewContainer, linear);
+          customBackgroundShape, customCardViewContainer, docBtn, linear);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

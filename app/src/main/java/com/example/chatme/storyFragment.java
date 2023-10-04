@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.chatme.databinding.FragmentCalllBinding;
 import com.example.chatme.databinding.FragmentChatBinding;
 import com.example.chatme.databinding.FragmentStoryBinding;
 
@@ -79,6 +80,8 @@ public class storyFragment extends Fragment {
         };
         thread.start();
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_story, container, false);
+        binding = FragmentStoryBinding.inflate(inflater, container, false);
+
+        return binding.getRoot();
     }
 }

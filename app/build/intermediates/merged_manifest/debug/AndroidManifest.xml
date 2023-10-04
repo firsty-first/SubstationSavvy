@@ -32,6 +32,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.Chatme" >
         <activity
+            android:name="com.example.chatme.documentation_activity"
+            android:exported="false" />
+        <activity
             android:name="com.example.chatme.splashscreen"
             android:exported="true" >
             <intent-filter>
@@ -51,8 +54,7 @@
             android:exported="false" />
         <activity
             android:name="com.example.chatme.signInActivity"
-            android:exported="true" >
-        </activity>
+            android:exported="true" />
 
         <provider
             android:name="com.squareup.picasso.PicassoProvider"

@@ -7,12 +7,15 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.WindowManager;
 
-public class splashscreen extends AppCompatActivity {
+import com.example.chatme.databinding.ActivitySplashscreenBinding;
 
+public class splashscreen extends AppCompatActivity {
+ActivitySplashscreenBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splashscreen);
+        binding=ActivitySplashscreenBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 //        getSupportActionBar().hide;
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_ALT_FOCUSABLE_IM);
 Thread thread=new Thread(){

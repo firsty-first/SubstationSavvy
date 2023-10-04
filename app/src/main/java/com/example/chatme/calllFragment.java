@@ -8,6 +8,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.chatme.databinding.FragmentCalllBinding;
+import com.example.chatme.databinding.FragmentStoryBinding;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link calllFragment#newInstance} factory method to
@@ -17,6 +20,7 @@ public class calllFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+    FragmentCalllBinding binding;
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
@@ -58,7 +62,15 @@ public class calllFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        binding = FragmentCalllBinding.inflate(inflater, container, false);
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_calll, container, false);
+        return  binding.getRoot();
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        binding=null;
     }
 }

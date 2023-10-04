@@ -80,12 +80,19 @@ public class chatFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         // Inflate the layout for this fragment
       binding= FragmentChatBinding.inflate(inflater, container, false);
 //        UserAdapter adapter=new UserAdapter(arrayList,getContext());
 //        binding.chatRv.setAdapter(adapter);
 //        LinearLayoutManager layoutManager=new LinearLayoutManager(getContext());
 //        binding.chatRv.setLayoutManager(layoutManager);
+        binding.docBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), documentation_activity.class));
+            }
+        });
         binding.chabotimage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -125,8 +132,6 @@ public class chatFragment extends Fragment {
 //            }
 //        });
 
-
-
       return  binding.getRoot();
     }
 
@@ -140,7 +145,6 @@ public class chatFragment extends Fragment {
                 Log.d("result",response.body().toString());
                 Toast.makeText(getContext(), response.body().getMessage(), Toast.LENGTH_SHORT).show();
             }
-
             @Override
             public void onFailure(Call<PredictionResponse> call, Throwable t) {
                 t.printStackTrace();
@@ -148,9 +152,6 @@ public class chatFragment extends Fragment {
 
                 // Handle failure
             }
-
         });
-
     }
-
 }
