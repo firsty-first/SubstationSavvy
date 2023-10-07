@@ -5,22 +5,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-   android:background="#6B097B"
+   android:background="#050534"
     tools:context=".splashscreen">
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animation_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        app:lottie_rawRes="@raw/electrician"
-
-
+        android:scaleType="fitXY"
+        app:lottie_autoPlay="true"
 
 
-    app:lottie_loop="false"
+        app:lottie_loop="false"
 
-    app:lottie_autoPlay="true" />
+        app:lottie_rawRes="@raw/electrician" />
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="40dp"
+       android:text="Substation savvy"
+       android:layout_gravity="center_horizontal"
+android:textAlignment="center"
+       android:autoSizeTextType="none"
+       android:scaleType="fitXY"
+       android:textColor="#F1DF1B"
+       />
 
 
 </LinearLayout>

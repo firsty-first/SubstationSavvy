@@ -22,10 +22,10 @@ public final class FragmentChatBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final ImageView chabotimage;
+  public final TextView Greeting;
 
   @NonNull
-  public final TextView chatwithbot;
+  public final ImageView chabotimage;
 
   @NonNull
   public final ImageView customBackgroundShape;
@@ -39,17 +39,25 @@ public final class FragmentChatBinding implements ViewBinding {
   @NonNull
   public final LinearLayout linear;
 
-  private FragmentChatBinding(@NonNull LinearLayout rootView, @NonNull ImageView chabotimage,
-      @NonNull TextView chatwithbot, @NonNull ImageView customBackgroundShape,
+  @NonNull
+  public final TextView username;
+
+  @NonNull
+  public final TextView weather;
+
+  private FragmentChatBinding(@NonNull LinearLayout rootView, @NonNull TextView Greeting,
+      @NonNull ImageView chabotimage, @NonNull ImageView customBackgroundShape,
       @NonNull FrameLayout customCardViewContainer, @NonNull ImageView docBtn,
-      @NonNull LinearLayout linear) {
+      @NonNull LinearLayout linear, @NonNull TextView username, @NonNull TextView weather) {
     this.rootView = rootView;
+    this.Greeting = Greeting;
     this.chabotimage = chabotimage;
-    this.chatwithbot = chatwithbot;
     this.customBackgroundShape = customBackgroundShape;
     this.customCardViewContainer = customCardViewContainer;
     this.docBtn = docBtn;
     this.linear = linear;
+    this.username = username;
+    this.weather = weather;
   }
 
   @Override
@@ -79,15 +87,15 @@ public final class FragmentChatBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.chabotimage;
-      ImageView chabotimage = ViewBindings.findChildViewById(rootView, id);
-      if (chabotimage == null) {
+      id = R.id.Greeting;
+      TextView Greeting = ViewBindings.findChildViewById(rootView, id);
+      if (Greeting == null) {
         break missingId;
       }
 
-      id = R.id.chatwithbot;
-      TextView chatwithbot = ViewBindings.findChildViewById(rootView, id);
-      if (chatwithbot == null) {
+      id = R.id.chabotimage;
+      ImageView chabotimage = ViewBindings.findChildViewById(rootView, id);
+      if (chabotimage == null) {
         break missingId;
       }
 
@@ -111,8 +119,20 @@ public final class FragmentChatBinding implements ViewBinding {
 
       LinearLayout linear = (LinearLayout) rootView;
 
-      return new FragmentChatBinding((LinearLayout) rootView, chabotimage, chatwithbot,
-          customBackgroundShape, customCardViewContainer, docBtn, linear);
+      id = R.id.username;
+      TextView username = ViewBindings.findChildViewById(rootView, id);
+      if (username == null) {
+        break missingId;
+      }
+
+      id = R.id.weather;
+      TextView weather = ViewBindings.findChildViewById(rootView, id);
+      if (weather == null) {
+        break missingId;
+      }
+
+      return new FragmentChatBinding((LinearLayout) rootView, Greeting, chabotimage,
+          customBackgroundShape, customCardViewContainer, docBtn, linear, username, weather);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

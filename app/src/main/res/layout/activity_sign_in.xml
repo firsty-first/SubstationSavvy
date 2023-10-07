@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/background_intro"
     tools:context=".signInActivity">
 
     <ImageView
@@ -27,54 +28,61 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:contentPadding="12dp"
-        app:cardCornerRadius="7dp"
+
+        android:layout_marginTop="75dp"
+        android:backgroundTint="#2F47BEC9"
         android:elevation="6dp"
-        app:contentPaddingTop="15dp"
-        app:cardUseCompatPadding="true">
+        app:cardCornerRadius="7dp"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="12dp"
+        app:contentPaddingTop="15dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+
             android:orientation="vertical">
-<androidx.cardview.widget.CardView
-    android:layout_width="match_parent"
-    android:elevation="5dp"
-    app:cardCornerRadius="8dp"
-    app:cardUseCompatPadding="true"
-    android:layout_height="wrap_content">
-    <EditText
-        android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
 
-        android:padding="10dp"
-        android:hint="Enter your email"
-        android:background="@null"
-        android:inputType="textEmailAddress" />
-
-</androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:elevation="5dp"
                 app:cardCornerRadius="8dp"
+                app:cardUseCompatPadding="true">
+
+                <EditText
+                    android:id="@+id/editTextTextEmailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+
+                    android:ems="10"
+                    android:hint="Enter your email"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="15dp"
-                app:cardUseCompatPadding="true"
-                android:layout_height="wrap_content">
+                android:elevation="5dp"
+                app:cardCornerRadius="8dp"
+                app:cardUseCompatPadding="true">
+
                 <EditText
                     android:id="@+id/editTextTextPassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:ems="10"
                     android:background="@null"
+                    android:ems="10"
                     android:hint="enter your password"
-                    android:padding="10dp"
-                    android:inputType="textPassword" />
+                    android:inputType="textPassword"
+                    android:padding="10dp" />
 
             </androidx.cardview.widget.CardView>
-
 
 
             <Button
@@ -82,9 +90,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:gravity="fill"
                 android:backgroundTint="@color/blue_teal"
+                android:gravity="fill"
                 android:text="Sign in" />
+            <!-- Auto layout, variables, and unit scale are not yet supported -->
+
 
             <TextView
                 android:id="@+id/signIn_tv"
@@ -92,37 +102,11 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
                 android:layout_marginEnd="4dp"
+
                 android:text="signUp"
-                android:textSize="17sp"
-                android:textColor="@color/blue_teal" />
+                android:textColor="@color/hometheme"
+                android:textSize="17sp" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/signIn_google"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="1dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_weight="2"
-                    android:text="Google"
-                    android:background="@drawable/common_google_signin_btn_text_dark_normal"
-                    app:cornerRadius="10dp" />
-
-                <Button
-                    android:id="@+id/signin_fb"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_weight="1"
-                    android:text="Facebook"
-                    android:background="@color/common_google_signin_btn_text_dark_focused"
-                    app:cornerRadius="10dp" />
-            </LinearLayout>
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>

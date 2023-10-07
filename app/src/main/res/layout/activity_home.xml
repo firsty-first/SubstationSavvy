@@ -10,12 +10,21 @@
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:elevation="7dp"
-        app:tabIndicator="@color/primary"
-        app:tabSelectedTextColor="@color/blue_teal"
+        android:layout_height="50dp"
+        android:background="#6D77F9"
+        android:elevation="3dp"
+
+        android:requiresFadingEdge="horizontal"
+        app:tabMode="fixed"
+app:tabTextColor="@color/colorPrimaryLight"
+        app:tabIndicator="@color/colorBackground"
+        app:tabSelectedTextColor="@color/white"
+        tabSelectedTextColor="#FFFFFF"
+app:tabIndicatorAnimationMode="elastic"
+        app:tabIconTint="@color/colorPrimaryLight"
         app:tabGravity="fill"
         />
+
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewpager"

@@ -9,6 +9,9 @@
         android:targetSdkVersion="33" />
 
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
@@ -31,6 +34,9 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.Chatme" >
+        <activity
+            android:name="com.example.chatme.pdfViewer"
+            android:exported="false" />
         <activity
             android:name="com.example.chatme.documentation_activity"
             android:exported="false" />

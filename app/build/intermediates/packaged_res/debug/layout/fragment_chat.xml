@@ -4,29 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linear"
     android:layout_width="match_parent"
-  android:background="@color/hometheme"
-
+  android:background="@drawable/liquidflow"
+    android:scaleType="fitXY"
     android:layout_height="match_parent"
     android:orientation="vertical"
-
     tools:context=".chatFragment">
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     <FrameLayout
         android:id="@+id/customCardViewContainer"
         android:layout_width="match_parent"
+        android:background="@drawable/cardtwocorner"
         android:layout_height="wrap_content">
 
         <!-- Custom background shape -->
@@ -42,7 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardPreventCornerOverlap="false"
-android:backgroundTint="@color/topcard"
+android:backgroundTint="#6D77FA"
             app:cardElevation="0dp"
             app:cardCornerRadius="100dp"
             >
@@ -61,57 +49,79 @@ android:backgroundTint="@color/topcard"
                     android:layout_height="wrap_content"
                     android:src="@drawable/electricianlogo" />
 
-                <ImageView
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
 
-                    android:layout_width="160dp"
-                    android:layout_height="138dp"
+                    <TextView
+                        android:id="@+id/username"
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="32dp"
+                        android:gravity="center_horizontal"
+                        android:text="Gaurav "
+                        android:textColor="@color/white"
+                        android:textSize="28sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@+id/weather"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Greeting" />
 
+                    <TextView
+                        android:id="@+id/Greeting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Good Morning"
+                        android:textColor="#DADA21"
+                        android:textSize="28sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/username"
+                        app:layout_constraintTop_toTopOf="parent" />
 
-                    android:src="@drawable/welcome1" />
+                    <TextView
+                        android:id="@+id/weather"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="end"
+                        android:text="38 C in durgapur "
+                        android:textColor="@color/white"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/username" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
 
             </LinearLayout>
 
 
-            <TextView
-                android:id="@+id/chatwithbot"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end|center"
-                android:backgroundTint="@color/topcard"
-                android:textColor="@color/white"
-
-                android:textSize="18sp"
-                android:text="Tap anywhere on Screen tochat" />
-
         </androidx.cardview.widget.CardView>
     </FrameLayout>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        >
+
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-           app:cardBackgroundColor="@color/hometheme"
+            android:layout_gravity="bottom"
             android:elevation="10dp"
-            app:cardCornerRadius="12dp"
-            app:cardUseCompatPadding="false">
+            app:cardBackgroundColor="#00535778"
+            android:background="@drawable/cardtwocorner"
+            app:cardCornerRadius="28dp"
+            app:cardUseCompatPadding="true">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -139,13 +149,13 @@ android:backgroundTint="@color/topcard"
                             android:layout_marginTop="10dp"
                             android:layout_weight="1"
                             android:padding="5dp"
-                            android:src="@drawable/historyicon" />
+                            android:src="@drawable/baseline_location_on_24" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:text="Feedback History"
+                            android:text="Location"
                             android:textColor="@color/white"
 
                             android:textSize="24sp" />
@@ -199,7 +209,7 @@ android:backgroundTint="@color/topcard"
                         android:orientation="vertical">
 
                         <ImageView
-                        android:id="@+id/docBtn"
+                            android:id="@+id/docBtn"
                             android:layout_width="66dp"
                             android:layout_height="66dp"
                             android:layout_gravity="center"

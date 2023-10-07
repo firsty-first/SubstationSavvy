@@ -8,24 +8,20 @@ import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
-import androidx.viewbinding.ViewBindings;
-import com.airbnb.lottie.LottieAnimationView;
 import com.example.chatme.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
-import java.lang.String;
 
 public final class FragmentStoryBinding implements ViewBinding {
   @NonNull
   private final LinearLayout rootView;
 
   @NonNull
-  public final LottieAnimationView animationView;
+  public final LinearLayout linearlay;
 
-  private FragmentStoryBinding(@NonNull LinearLayout rootView,
-      @NonNull LottieAnimationView animationView) {
+  private FragmentStoryBinding(@NonNull LinearLayout rootView, @NonNull LinearLayout linearlay) {
     this.rootView = rootView;
-    this.animationView = animationView;
+    this.linearlay = linearlay;
   }
 
   @Override
@@ -51,19 +47,12 @@ public final class FragmentStoryBinding implements ViewBinding {
 
   @NonNull
   public static FragmentStoryBinding bind(@NonNull View rootView) {
-    // The body of this method is generated in a way you would not otherwise write.
-    // This is done to optimize the compiled bytecode for size and performance.
-    int id;
-    missingId: {
-      id = R.id.animation_view;
-      LottieAnimationView animationView = ViewBindings.findChildViewById(rootView, id);
-      if (animationView == null) {
-        break missingId;
-      }
-
-      return new FragmentStoryBinding((LinearLayout) rootView, animationView);
+    if (rootView == null) {
+      throw new NullPointerException("rootView");
     }
-    String missingId = rootView.getResources().getResourceName(id);
-    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
+
+    LinearLayout linearlay = (LinearLayout) rootView;
+
+    return new FragmentStoryBinding((LinearLayout) rootView, linearlay);
   }
 }

@@ -35,26 +35,17 @@ public final class ActivitySignInBinding implements ViewBinding {
   public final ImageView imageView;
 
   @NonNull
-  public final Button signInGoogle;
-
-  @NonNull
   public final TextView signInTv;
-
-  @NonNull
-  public final Button signinFb;
 
   private ActivitySignInBinding(@NonNull LinearLayout rootView, @NonNull Button btnSignIN,
       @NonNull EditText editTextTextEmailAddress, @NonNull EditText editTextTextPassword,
-      @NonNull ImageView imageView, @NonNull Button signInGoogle, @NonNull TextView signInTv,
-      @NonNull Button signinFb) {
+      @NonNull ImageView imageView, @NonNull TextView signInTv) {
     this.rootView = rootView;
     this.btnSignIN = btnSignIN;
     this.editTextTextEmailAddress = editTextTextEmailAddress;
     this.editTextTextPassword = editTextTextPassword;
     this.imageView = imageView;
-    this.signInGoogle = signInGoogle;
     this.signInTv = signInTv;
-    this.signinFb = signinFb;
   }
 
   @Override
@@ -108,26 +99,14 @@ public final class ActivitySignInBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.signIn_google;
-      Button signInGoogle = ViewBindings.findChildViewById(rootView, id);
-      if (signInGoogle == null) {
-        break missingId;
-      }
-
       id = R.id.signIn_tv;
       TextView signInTv = ViewBindings.findChildViewById(rootView, id);
       if (signInTv == null) {
         break missingId;
       }
 
-      id = R.id.signin_fb;
-      Button signinFb = ViewBindings.findChildViewById(rootView, id);
-      if (signinFb == null) {
-        break missingId;
-      }
-
       return new ActivitySignInBinding((LinearLayout) rootView, btnSignIN, editTextTextEmailAddress,
-          editTextTextPassword, imageView, signInGoogle, signInTv, signinFb);
+          editTextTextPassword, imageView, signInTv);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

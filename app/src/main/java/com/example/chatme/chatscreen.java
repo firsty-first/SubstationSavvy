@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.speech.RecognizerIntent;
 import android.speech.tts.TextToSpeech;
+import android.speech.tts.UtteranceProgressListener;
 import android.telephony.PhoneNumberFormattingTextWatcher;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -28,7 +29,9 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
 
 import okhttp3.OkHttpClient;
 import retrofit2.Call;
@@ -47,6 +50,7 @@ public class chatscreen extends AppCompatActivity {
     ChatAdapter chatAdapter;
     private ApiService apiService;
     Retrofit retrofit;
+    TextToSpeech textToSpeech;
     private final String baseUrl = "https://testapi-8skm.onrender.com";
 String prediction;
 public  String spokenText;
@@ -134,6 +138,7 @@ reciverRoom=recieverId+senderId;
             public void onClick(View view) {
                 String msgText=binding.editTextText.getText().toString();
                 storeMsgIndatabase(msgText);
+
 
               //keep this in try catch with extra precation
                 getMessageFromBot(msgText);
@@ -262,6 +267,7 @@ model.isBot=true;
                     prediction = response.body();
 
                     storeBOTMsgIndatabase(prediction);
+                   // tts(prediction);//might need to shift this
                     Toast.makeText(getApplicationContext(), prediction, Toast.LENGTH_SHORT).show();
 
                     // Example: Display the prediction in a TextView
@@ -332,4 +338,40 @@ model.isBot=true;
 //            // For example, you can show a Toast message.
 //        }
 //    }
+
+    void tts(String text)
+    {
+        textToSpeech.setLanguage(new Locale("en", "IN"));
+
+
+        if (!text.isEmpty()) {
+            // Add a unique utterance ID
+            String utteranceId = "utteranceId";
+
+            // Speak the text
+            HashMap<String, String> params = new HashMap<>();
+            params.put(TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID, utteranceId);
+            //textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, params);
+            textToSpeech.speak(text,TextToSpeech.QUEUE_FLUSH,null);
+        }
+
+        textToSpeech.setOnUtteranceProgressListener(new UtteranceProgressListener() {
+            @Override
+            public void onStart(String s) {
+
+
+            }
+
+            @Override
+            public void onDone(String s) {
+                textToSpeech.shutdown();
+            }
+
+            @Override
+            public void onError(String s) {
+
+            }
+        });
+
+    }
 }

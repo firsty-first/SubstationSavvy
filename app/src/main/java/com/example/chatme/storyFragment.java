@@ -1,6 +1,8 @@
 package com.example.chatme;
 
-import android.content.Intent;
+
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.example.chatme.databinding.FragmentCalllBinding;
 import com.example.chatme.databinding.FragmentChatBinding;
 import com.example.chatme.databinding.FragmentStoryBinding;
@@ -29,6 +32,7 @@ public class storyFragment extends Fragment {
     private String mParam1;
     private String mParam2;
     FragmentStoryBinding binding;
+
     public storyFragment() {
         // Required empty public constructor
     }
@@ -64,24 +68,19 @@ public class storyFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        Thread thread=new Thread(){
-            @Override
-            public void run() {
-                super.run();
-                try {
-                    sleep(4000);
-                }
-                catch (Exception ex)
-                {
-                    ex.printStackTrace();
-                }
 
-            }
-        };
-        thread.start();
+
         // Inflate the layout for this fragment
         binding = FragmentStoryBinding.inflate(inflater, container, false);
-
         return binding.getRoot();
     }
+
+   // @Override
+//    public void onDestroyView() {
+//        super.onDestroyView();
+//        binding.animationView.cancelAnimation(); // Stop the animation
+//        binding.animationView.clearAnimation();  // Clear any animation state
+//    // Reset the animation progress
+//    }
+
 }

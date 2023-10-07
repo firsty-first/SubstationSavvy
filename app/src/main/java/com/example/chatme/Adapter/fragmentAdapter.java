@@ -45,11 +45,11 @@ public class fragmentAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         String title=null;
         if(position==0)
-            title="chats";
+            title="Home";
         else if(position==1)
-            title="status";
+            title="Navigation";
         else if (position==2) {
-            title = "calls";
+            title = "Emergency";
         }
         return title;
     }
