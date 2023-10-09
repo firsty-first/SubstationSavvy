@@ -23,6 +23,7 @@ drawable backbtn
 drawable background_intro
 drawable background_page
 drawable baseline_analytics_24
+drawable baseline_download_24
 drawable baseline_location_on_24
 drawable baseline_record_voice_over_24
 drawable baseline_upload_24
@@ -69,6 +70,8 @@ id logout
 id messageReciever
 id messagesender
 id name
+id pdfNameTextView
+id rvDoc
 id sendBtn
 id setting
 id signIn_tv
@@ -93,6 +96,7 @@ layout activity_sign_in
 layout activity_splashscreen
 layout chatcard
 layout chatscreen_ui_activity
+layout documentationcard
 layout fragment_calll
 layout fragment_chat
 layout fragment_story

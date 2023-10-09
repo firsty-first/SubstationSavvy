@@ -2496,6 +2496,7 @@ int drawable backbtn 0x7f07005c
 int drawable background_intro 0x7f07005d
 int drawable background_page 0x7f07005e
 int drawable baseline_analytics_24 0x7f07005f
+int drawable baseline_download_24 0x7f0700ca
 int drawable baseline_location_on_24 0x7f070060
 int drawable baseline_record_voice_over_24 0x7f070061
 int drawable baseline_upload_24 0x7f070062
@@ -2966,6 +2967,7 @@ int id parent_matrix 0x7f080168
 int id password_toggle 0x7f080169
 int id path 0x7f08016a
 int id pathRelative 0x7f08016b
+int id pdfNameTextView 0x7f080217
 int id peekHeight 0x7f08016c
 int id percent 0x7f08016d
 int id pin 0x7f08016e
@@ -2985,6 +2987,7 @@ int id right_icon 0x7f08017b
 int id right_side 0x7f08017c
 int id rounded 0x7f08017d
 int id row_index_key 0x7f08017e
+int id rvDoc 0x7f080218
 int id save_non_transition_alpha 0x7f08017f
 int id save_overlay_view 0x7f080180
 int id sawtooth 0x7f080181
@@ -3249,6 +3252,7 @@ int layout design_navigation_menu 0x7f0b0032
 int layout design_navigation_menu_item 0x7f0b0033
 int layout design_text_input_end_icon 0x7f0b0034
 int layout design_text_input_start_icon 0x7f0b0035
+int layout documentationcard 0x7f0b0082
 int layout fragment_calll 0x7f0b0036
 int layout fragment_chat 0x7f0b0037
 int layout fragment_story 0x7f0b0038

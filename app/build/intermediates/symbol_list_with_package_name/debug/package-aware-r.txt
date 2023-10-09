@@ -2497,6 +2497,7 @@ drawable backbtn
 drawable background_intro
 drawable background_page
 drawable baseline_analytics_24
+drawable baseline_download_24
 drawable baseline_location_on_24
 drawable baseline_record_voice_over_24
 drawable baseline_upload_24
@@ -2967,6 +2968,7 @@ id parent_matrix
 id password_toggle
 id path
 id pathRelative
+id pdfNameTextView
 id peekHeight
 id percent
 id pin
@@ -2986,6 +2988,7 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id rvDoc
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3250,6 +3253,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout documentationcard
 layout fragment_calll
 layout fragment_chat
 layout fragment_story

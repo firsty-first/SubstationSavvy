@@ -242,58 +242,64 @@
 130-->[com.google.firebase:firebase-database:20.2.2] C:\Users\GAURAV\.gradle\caches\transforms-3\28a94b37ecb4b8aabdef21b9f2c4abd1\transformed\firebase-database-20.2.2\AndroidManifest.xml:32:17-109
 131                android:value="com.google.firebase.components.ComponentRegistrar" />
 131-->[com.google.firebase:firebase-database:20.2.2] C:\Users\GAURAV\.gradle\caches\transforms-3\28a94b37ecb4b8aabdef21b9f2c4abd1\transformed\firebase-database-20.2.2\AndroidManifest.xml:33:17-82
-132        </service>
-133
-134        <provider
-134-->[com.google.firebase:firebase-common:20.3.3] C:\Users\GAURAV\.gradle\caches\transforms-3\bf26ba3c89adeb51e57e1e58f0b15d21\transformed\firebase-common-20.3.3\AndroidManifest.xml:25:9-30:39
-135            android:name="com.google.firebase.provider.FirebaseInitProvider"
-135-->[com.google.firebase:firebase-common:20.3.3] C:\Users\GAURAV\.gradle\caches\transforms-3\bf26ba3c89adeb51e57e1e58f0b15d21\transformed\firebase-common-20.3.3\AndroidManifest.xml:26:13-77
-136            android:authorities="com.example.chatme.firebaseinitprovider"
-136-->[com.google.firebase:firebase-common:20.3.3] C:\Users\GAURAV\.gradle\caches\transforms-3\bf26ba3c89adeb51e57e1e58f0b15d21\transformed\firebase-common-20.3.3\AndroidManifest.xml:27:13-72
-137            android:directBootAware="true"
-137-->[com.google.firebase:firebase-common:20.3.3] C:\Users\GAURAV\.gradle\caches\transforms-3\bf26ba3c89adeb51e57e1e58f0b15d21\transformed\firebase-common-20.3.3\AndroidManifest.xml:28:13-43
-138            android:exported="false"
-138-->[com.google.firebase:firebase-common:20.3.3] C:\Users\GAURAV\.gradle\caches\transforms-3\bf26ba3c89adeb51e57e1e58f0b15d21\transformed\firebase-common-20.3.3\AndroidManifest.xml:29:13-37
-139            android:initOrder="100" />
-139-->[com.google.firebase:firebase-common:20.3.3] C:\Users\GAURAV\.gradle\caches\transforms-3\bf26ba3c89adeb51e57e1e58f0b15d21\transformed\firebase-common-20.3.3\AndroidManifest.xml:30:13-36
-140
-141        <activity
-141-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\GAURAV\.gradle\caches\transforms-3\c573c5595d70583fcc4feae25b121292\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
-142            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-142-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\GAURAV\.gradle\caches\transforms-3\c573c5595d70583fcc4feae25b121292\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:19-85
-143            android:exported="false"
-143-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\GAURAV\.gradle\caches\transforms-3\c573c5595d70583fcc4feae25b121292\transformed\play-services-base-18.1.0\AndroidManifest.xml:22:19-43
-144            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-144-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\GAURAV\.gradle\caches\transforms-3\c573c5595d70583fcc4feae25b121292\transformed\play-services-base-18.1.0\AndroidManifest.xml:21:19-78
-145
-146        <meta-data
-146-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\GAURAV\.gradle\caches\transforms-3\1145c5506ea32c10f7cbac2f28bf84c1\transformed\play-services-basement-18.2.0\AndroidManifest.xml:21:9-23:69
-147            android:name="com.google.android.gms.version"
-147-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\GAURAV\.gradle\caches\transforms-3\1145c5506ea32c10f7cbac2f28bf84c1\transformed\play-services-basement-18.2.0\AndroidManifest.xml:22:13-58
-148            android:value="@integer/google_play_services_version" />
-148-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\GAURAV\.gradle\caches\transforms-3\1145c5506ea32c10f7cbac2f28bf84c1\transformed\play-services-basement-18.2.0\AndroidManifest.xml:23:13-66
-149
-150        <provider
-150-->[androidx.emoji2:emoji2:1.2.0] C:\Users\GAURAV\.gradle\caches\transforms-3\eb88012741a64135b462a95b61c1572e\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-151            android:name="androidx.startup.InitializationProvider"
-151-->[androidx.emoji2:emoji2:1.2.0] C:\Users\GAURAV\.gradle\caches\transforms-3\eb88012741a64135b462a95b61c1572e\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-152            android:authorities="com.example.chatme.androidx-startup"
-152-->[androidx.emoji2:emoji2:1.2.0] C:\Users\GAURAV\.gradle\caches\transforms-3\eb88012741a64135b462a95b61c1572e\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-153            android:exported="false" >
-153-->[androidx.emoji2:emoji2:1.2.0] C:\Users\GAURAV\.gradle\caches\transforms-3\eb88012741a64135b462a95b61c1572e\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-154            <meta-data
-154-->[androidx.emoji2:emoji2:1.2.0] C:\Users\GAURAV\.gradle\caches\transforms-3\eb88012741a64135b462a95b61c1572e\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-155                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-155-->[androidx.emoji2:emoji2:1.2.0] C:\Users\GAURAV\.gradle\caches\transforms-3\eb88012741a64135b462a95b61c1572e\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-156                android:value="androidx.startup" />
-156-->[androidx.emoji2:emoji2:1.2.0] C:\Users\GAURAV\.gradle\caches\transforms-3\eb88012741a64135b462a95b61c1572e\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+132            <meta-data
+132-->[com.google.firebase:firebase-storage:20.2.1] C:\Users\GAURAV\.gradle\caches\transforms-3\96e60378f9582b6b43d5073b4ec04e3e\transformed\firebase-storage-20.2.1\AndroidManifest.xml:32:13-34:85
+133                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+133-->[com.google.firebase:firebase-storage:20.2.1] C:\Users\GAURAV\.gradle\caches\transforms-3\96e60378f9582b6b43d5073b4ec04e3e\transformed\firebase-storage-20.2.1\AndroidManifest.xml:33:17-107
+134                android:value="com.google.firebase.components.ComponentRegistrar" />
+134-->[com.google.firebase:firebase-storage:20.2.1] C:\Users\GAURAV\.gradle\caches\transforms-3\96e60378f9582b6b43d5073b4ec04e3e\transformed\firebase-storage-20.2.1\AndroidManifest.xml:34:17-82
+135        </service>
+136
+137        <provider
+137-->[com.google.firebase:firebase-common:20.3.3] C:\Users\GAURAV\.gradle\caches\transforms-3\bf26ba3c89adeb51e57e1e58f0b15d21\transformed\firebase-common-20.3.3\AndroidManifest.xml:25:9-30:39
+138            android:name="com.google.firebase.provider.FirebaseInitProvider"
+138-->[com.google.firebase:firebase-common:20.3.3] C:\Users\GAURAV\.gradle\caches\transforms-3\bf26ba3c89adeb51e57e1e58f0b15d21\transformed\firebase-common-20.3.3\AndroidManifest.xml:26:13-77
+139            android:authorities="com.example.chatme.firebaseinitprovider"
+139-->[com.google.firebase:firebase-common:20.3.3] C:\Users\GAURAV\.gradle\caches\transforms-3\bf26ba3c89adeb51e57e1e58f0b15d21\transformed\firebase-common-20.3.3\AndroidManifest.xml:27:13-72
+140            android:directBootAware="true"
+140-->[com.google.firebase:firebase-common:20.3.3] C:\Users\GAURAV\.gradle\caches\transforms-3\bf26ba3c89adeb51e57e1e58f0b15d21\transformed\firebase-common-20.3.3\AndroidManifest.xml:28:13-43
+141            android:exported="false"
+141-->[com.google.firebase:firebase-common:20.3.3] C:\Users\GAURAV\.gradle\caches\transforms-3\bf26ba3c89adeb51e57e1e58f0b15d21\transformed\firebase-common-20.3.3\AndroidManifest.xml:29:13-37
+142            android:initOrder="100" />
+142-->[com.google.firebase:firebase-common:20.3.3] C:\Users\GAURAV\.gradle\caches\transforms-3\bf26ba3c89adeb51e57e1e58f0b15d21\transformed\firebase-common-20.3.3\AndroidManifest.xml:30:13-36
+143
+144        <activity
+144-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\GAURAV\.gradle\caches\transforms-3\c573c5595d70583fcc4feae25b121292\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+145            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+145-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\GAURAV\.gradle\caches\transforms-3\c573c5595d70583fcc4feae25b121292\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+146            android:exported="false"
+146-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\GAURAV\.gradle\caches\transforms-3\c573c5595d70583fcc4feae25b121292\transformed\play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+147            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+147-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\GAURAV\.gradle\caches\transforms-3\c573c5595d70583fcc4feae25b121292\transformed\play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+148
+149        <meta-data
+149-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\GAURAV\.gradle\caches\transforms-3\1145c5506ea32c10f7cbac2f28bf84c1\transformed\play-services-basement-18.2.0\AndroidManifest.xml:21:9-23:69
+150            android:name="com.google.android.gms.version"
+150-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\GAURAV\.gradle\caches\transforms-3\1145c5506ea32c10f7cbac2f28bf84c1\transformed\play-services-basement-18.2.0\AndroidManifest.xml:22:13-58
+151            android:value="@integer/google_play_services_version" />
+151-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\GAURAV\.gradle\caches\transforms-3\1145c5506ea32c10f7cbac2f28bf84c1\transformed\play-services-basement-18.2.0\AndroidManifest.xml:23:13-66
+152
+153        <provider
+153-->[androidx.emoji2:emoji2:1.2.0] C:\Users\GAURAV\.gradle\caches\transforms-3\eb88012741a64135b462a95b61c1572e\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+154            android:name="androidx.startup.InitializationProvider"
+154-->[androidx.emoji2:emoji2:1.2.0] C:\Users\GAURAV\.gradle\caches\transforms-3\eb88012741a64135b462a95b61c1572e\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+155            android:authorities="com.example.chatme.androidx-startup"
+155-->[androidx.emoji2:emoji2:1.2.0] C:\Users\GAURAV\.gradle\caches\transforms-3\eb88012741a64135b462a95b61c1572e\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+156            android:exported="false" >
+156-->[androidx.emoji2:emoji2:1.2.0] C:\Users\GAURAV\.gradle\caches\transforms-3\eb88012741a64135b462a95b61c1572e\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
 157            <meta-data
-157-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\GAURAV\.gradle\caches\transforms-3\c7a191cd82385db201399497594f5497\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-158                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-158-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\GAURAV\.gradle\caches\transforms-3\c7a191cd82385db201399497594f5497\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+157-->[androidx.emoji2:emoji2:1.2.0] C:\Users\GAURAV\.gradle\caches\transforms-3\eb88012741a64135b462a95b61c1572e\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+158                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+158-->[androidx.emoji2:emoji2:1.2.0] C:\Users\GAURAV\.gradle\caches\transforms-3\eb88012741a64135b462a95b61c1572e\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
 159                android:value="androidx.startup" />
-159-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\GAURAV\.gradle\caches\transforms-3\c7a191cd82385db201399497594f5497\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-160        </provider>
-161    </application>
-162
-163</manifest>
+159-->[androidx.emoji2:emoji2:1.2.0] C:\Users\GAURAV\.gradle\caches\transforms-3\eb88012741a64135b462a95b61c1572e\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+160            <meta-data
+160-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\GAURAV\.gradle\caches\transforms-3\c7a191cd82385db201399497594f5497\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+161                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+161-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\GAURAV\.gradle\caches\transforms-3\c7a191cd82385db201399497594f5497\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+162                android:value="androidx.startup" />
+162-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\GAURAV\.gradle\caches\transforms-3\c7a191cd82385db201399497594f5497\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+163        </provider>
+164    </application>
+165
+166</manifest>

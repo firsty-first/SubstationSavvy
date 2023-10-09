@@ -14,6 +14,7 @@ MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\GAURAV\.grad
 MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\GAURAV\.gradle\caches\transforms-3\ed0ff587a1864cda5e2e24ef58dfc0cd\transformed\appcompat-1.6.1\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-auth:22.1.1] C:\Users\GAURAV\.gradle\caches\transforms-3\c684886053b01c9ee181549294ae56ca\transformed\firebase-auth-22.1.1\AndroidManifest.xml:17:1-75:12
 MERGED from [com.google.firebase:firebase-database:20.2.2] C:\Users\GAURAV\.gradle\caches\transforms-3\28a94b37ecb4b8aabdef21b9f2c4abd1\transformed\firebase-database-20.2.2\AndroidManifest.xml:15:1-37:12
+MERGED from [com.google.firebase:firebase-storage:20.2.1] C:\Users\GAURAV\.gradle\caches\transforms-3\96e60378f9582b6b43d5073b4ec04e3e\transformed\firebase-storage-20.2.1\AndroidManifest.xml:15:1-38:12
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\GAURAV\.gradle\caches\transforms-3\b143e80a6df8dd4fc5ec7dba32b5345a\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-common:20.3.3] C:\Users\GAURAV\.gradle\caches\transforms-3\bf26ba3c89adeb51e57e1e58f0b15d21\transformed\firebase-common-20.3.3\AndroidManifest.xml:15:1-39:12
 MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\GAURAV\.gradle\caches\transforms-3\8731d90e3c05e86be0826c3623ac2acc\transformed\exifinterface-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -53,8 +54,8 @@ MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\GAURAV\.gradle
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\GAURAV\.gradle\caches\transforms-3\a5d86724a8d938b7baec79a7672a74db\transformed\lifecycle-runtime-2.5.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\GAURAV\.gradle\caches\transforms-3\cbe05a2c5db0202a0e72afcd1a3191f9\transformed\savedstate-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\GAURAV\.gradle\caches\transforms-3\8b92cc820134bbfbe1e5046870368d45\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\GAURAV\.gradle\caches\transforms-3\5d9d9a66e5892d3fe6e2e3971d02adbf\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-components:17.1.0] C:\Users\GAURAV\.gradle\caches\transforms-3\26c2edb1131c591a0ddbf7003f1e935f\transformed\firebase-components-17.1.0\AndroidManifest.xml:15:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\GAURAV\.gradle\caches\transforms-3\5d9d9a66e5892d3fe6e2e3971d02adbf\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\GAURAV\.gradle\caches\transforms-3\9ac2edc24da25d8b934d95e877d4ced1\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\GAURAV\.gradle\caches\transforms-3\235683a10d54bc61cef17e83fb5df22a\transformed\startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\GAURAV\.gradle\caches\transforms-3\d5e2f88733785840f68dceed37201434\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
@@ -116,6 +117,8 @@ MERGED from [com.google.firebase:firebase-auth:22.1.1] C:\Users\GAURAV\.gradle\c
 MERGED from [com.google.firebase:firebase-auth:22.1.1] C:\Users\GAURAV\.gradle\caches\transforms-3\c684886053b01c9ee181549294ae56ca\transformed\firebase-auth-22.1.1\AndroidManifest.xml:28:5-73:19
 MERGED from [com.google.firebase:firebase-database:20.2.2] C:\Users\GAURAV\.gradle\caches\transforms-3\28a94b37ecb4b8aabdef21b9f2c4abd1\transformed\firebase-database-20.2.2\AndroidManifest.xml:27:5-35:19
 MERGED from [com.google.firebase:firebase-database:20.2.2] C:\Users\GAURAV\.gradle\caches\transforms-3\28a94b37ecb4b8aabdef21b9f2c4abd1\transformed\firebase-database-20.2.2\AndroidManifest.xml:27:5-35:19
+MERGED from [com.google.firebase:firebase-storage:20.2.1] C:\Users\GAURAV\.gradle\caches\transforms-3\96e60378f9582b6b43d5073b4ec04e3e\transformed\firebase-storage-20.2.1\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.firebase:firebase-storage:20.2.1] C:\Users\GAURAV\.gradle\caches\transforms-3\96e60378f9582b6b43d5073b4ec04e3e\transformed\firebase-storage-20.2.1\AndroidManifest.xml:28:5-36:19
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\GAURAV\.gradle\caches\transforms-3\b143e80a6df8dd4fc5ec7dba32b5345a\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\GAURAV\.gradle\caches\transforms-3\b143e80a6df8dd4fc5ec7dba32b5345a\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-common:20.3.3] C:\Users\GAURAV\.gradle\caches\transforms-3\bf26ba3c89adeb51e57e1e58f0b15d21\transformed\firebase-common-20.3.3\AndroidManifest.xml:24:5-37:19
@@ -238,6 +241,8 @@ MERGED from [com.google.firebase:firebase-auth:22.1.1] C:\Users\GAURAV\.gradle\c
 MERGED from [com.google.firebase:firebase-auth:22.1.1] C:\Users\GAURAV\.gradle\caches\transforms-3\c684886053b01c9ee181549294ae56ca\transformed\firebase-auth-22.1.1\AndroidManifest.xml:21:5-23:64
 MERGED from [com.google.firebase:firebase-database:20.2.2] C:\Users\GAURAV\.gradle\caches\transforms-3\28a94b37ecb4b8aabdef21b9f2c4abd1\transformed\firebase-database-20.2.2\AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.firebase:firebase-database:20.2.2] C:\Users\GAURAV\.gradle\caches\transforms-3\28a94b37ecb4b8aabdef21b9f2c4abd1\transformed\firebase-database-20.2.2\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-storage:20.2.1] C:\Users\GAURAV\.gradle\caches\transforms-3\96e60378f9582b6b43d5073b4ec04e3e\transformed\firebase-storage-20.2.1\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-storage:20.2.1] C:\Users\GAURAV\.gradle\caches\transforms-3\96e60378f9582b6b43d5073b4ec04e3e\transformed\firebase-storage-20.2.1\AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\GAURAV\.gradle\caches\transforms-3\b143e80a6df8dd4fc5ec7dba32b5345a\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\GAURAV\.gradle\caches\transforms-3\b143e80a6df8dd4fc5ec7dba32b5345a\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-common:20.3.3] C:\Users\GAURAV\.gradle\caches\transforms-3\bf26ba3c89adeb51e57e1e58f0b15d21\transformed\firebase-common-20.3.3\AndroidManifest.xml:19:5-21:41
@@ -316,10 +321,10 @@ MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\GAURAV\.gradle\cache
 MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\GAURAV\.gradle\caches\transforms-3\cbe05a2c5db0202a0e72afcd1a3191f9\transformed\savedstate-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\GAURAV\.gradle\caches\transforms-3\8b92cc820134bbfbe1e5046870368d45\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\GAURAV\.gradle\caches\transforms-3\8b92cc820134bbfbe1e5046870368d45\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\GAURAV\.gradle\caches\transforms-3\5d9d9a66e5892d3fe6e2e3971d02adbf\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\GAURAV\.gradle\caches\transforms-3\5d9d9a66e5892d3fe6e2e3971d02adbf\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-components:17.1.0] C:\Users\GAURAV\.gradle\caches\transforms-3\26c2edb1131c591a0ddbf7003f1e935f\transformed\firebase-components-17.1.0\AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.firebase:firebase-components:17.1.0] C:\Users\GAURAV\.gradle\caches\transforms-3\26c2edb1131c591a0ddbf7003f1e935f\transformed\firebase-components-17.1.0\AndroidManifest.xml:18:5-20:41
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\GAURAV\.gradle\caches\transforms-3\5d9d9a66e5892d3fe6e2e3971d02adbf\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\GAURAV\.gradle\caches\transforms-3\5d9d9a66e5892d3fe6e2e3971d02adbf\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\GAURAV\.gradle\caches\transforms-3\9ac2edc24da25d8b934d95e877d4ced1\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\GAURAV\.gradle\caches\transforms-3\9ac2edc24da25d8b934d95e877d4ced1\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\GAURAV\.gradle\caches\transforms-3\235683a10d54bc61cef17e83fb5df22a\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
@@ -384,6 +389,8 @@ uses-permission#android.permission.INTERNET
 ADDED from [com.google.firebase:firebase-auth:22.1.1] C:\Users\GAURAV\.gradle\caches\transforms-3\c684886053b01c9ee181549294ae56ca\transformed\firebase-auth-22.1.1\AndroidManifest.xml:25:5-67
 MERGED from [com.google.firebase:firebase-database:20.2.2] C:\Users\GAURAV\.gradle\caches\transforms-3\28a94b37ecb4b8aabdef21b9f2c4abd1\transformed\firebase-database-20.2.2\AndroidManifest.xml:25:5-67
 MERGED from [com.google.firebase:firebase-database:20.2.2] C:\Users\GAURAV\.gradle\caches\transforms-3\28a94b37ecb4b8aabdef21b9f2c4abd1\transformed\firebase-database-20.2.2\AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-storage:20.2.1] C:\Users\GAURAV\.gradle\caches\transforms-3\96e60378f9582b6b43d5073b4ec04e3e\transformed\firebase-storage-20.2.1\AndroidManifest.xml:26:5-67
+MERGED from [com.google.firebase:firebase-storage:20.2.1] C:\Users\GAURAV\.gradle\caches\transforms-3\96e60378f9582b6b43d5073b4ec04e3e\transformed\firebase-storage-20.2.1\AndroidManifest.xml:26:5-67
 MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] C:\Users\GAURAV\.gradle\caches\transforms-3\5d1391720e172ac972b3bb7e35634eb3\transformed\recaptcha-18.1.2\AndroidManifest.xml:7:5-67
 MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] C:\Users\GAURAV\.gradle\caches\transforms-3\5d1391720e172ac972b3bb7e35634eb3\transformed\recaptcha-18.1.2\AndroidManifest.xml:7:5-67
 	android:name
@@ -392,6 +399,8 @@ uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-auth:22.1.1] C:\Users\GAURAV\.gradle\caches\transforms-3\c684886053b01c9ee181549294ae56ca\transformed\firebase-auth-22.1.1\AndroidManifest.xml:26:5-79
 MERGED from [com.google.firebase:firebase-database:20.2.2] C:\Users\GAURAV\.gradle\caches\transforms-3\28a94b37ecb4b8aabdef21b9f2c4abd1\transformed\firebase-database-20.2.2\AndroidManifest.xml:24:5-79
 MERGED from [com.google.firebase:firebase-database:20.2.2] C:\Users\GAURAV\.gradle\caches\transforms-3\28a94b37ecb4b8aabdef21b9f2c4abd1\transformed\firebase-database-20.2.2\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-storage:20.2.1] C:\Users\GAURAV\.gradle\caches\transforms-3\96e60378f9582b6b43d5073b4ec04e3e\transformed\firebase-storage-20.2.1\AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-storage:20.2.1] C:\Users\GAURAV\.gradle\caches\transforms-3\96e60378f9582b6b43d5073b4ec04e3e\transformed\firebase-storage-20.2.1\AndroidManifest.xml:25:5-79
 MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] C:\Users\GAURAV\.gradle\caches\transforms-3\5d1391720e172ac972b3bb7e35634eb3\transformed\recaptcha-18.1.2\AndroidManifest.xml:8:5-79
 MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] C:\Users\GAURAV\.gradle\caches\transforms-3\5d1391720e172ac972b3bb7e35634eb3\transformed\recaptcha-18.1.2\AndroidManifest.xml:8:5-79
 	android:name
@@ -448,6 +457,8 @@ service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [com.google.firebase:firebase-auth:22.1.1] C:\Users\GAURAV\.gradle\caches\transforms-3\c684886053b01c9ee181549294ae56ca\transformed\firebase-auth-22.1.1\AndroidManifest.xml:66:9-72:19
 MERGED from [com.google.firebase:firebase-database:20.2.2] C:\Users\GAURAV\.gradle\caches\transforms-3\28a94b37ecb4b8aabdef21b9f2c4abd1\transformed\firebase-database-20.2.2\AndroidManifest.xml:28:9-34:19
 MERGED from [com.google.firebase:firebase-database:20.2.2] C:\Users\GAURAV\.gradle\caches\transforms-3\28a94b37ecb4b8aabdef21b9f2c4abd1\transformed\firebase-database-20.2.2\AndroidManifest.xml:28:9-34:19
+MERGED from [com.google.firebase:firebase-storage:20.2.1] C:\Users\GAURAV\.gradle\caches\transforms-3\96e60378f9582b6b43d5073b4ec04e3e\transformed\firebase-storage-20.2.1\AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-storage:20.2.1] C:\Users\GAURAV\.gradle\caches\transforms-3\96e60378f9582b6b43d5073b4ec04e3e\transformed\firebase-storage-20.2.1\AndroidManifest.xml:29:9-35:19
 MERGED from [com.google.firebase:firebase-common:20.3.3] C:\Users\GAURAV\.gradle\caches\transforms-3\bf26ba3c89adeb51e57e1e58f0b15d21\transformed\firebase-common-20.3.3\AndroidManifest.xml:32:9-36:35
 MERGED from [com.google.firebase:firebase-common:20.3.3] C:\Users\GAURAV\.gradle\caches\transforms-3\bf26ba3c89adeb51e57e1e58f0b15d21\transformed\firebase-common-20.3.3\AndroidManifest.xml:32:9-36:35
 	android:exported
@@ -470,6 +481,12 @@ ADDED from [com.google.firebase:firebase-database:20.2.2] C:\Users\GAURAV\.gradl
 		ADDED from [com.google.firebase:firebase-database:20.2.2] C:\Users\GAURAV\.gradle\caches\transforms-3\28a94b37ecb4b8aabdef21b9f2c4abd1\transformed\firebase-database-20.2.2\AndroidManifest.xml:33:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-database:20.2.2] C:\Users\GAURAV\.gradle\caches\transforms-3\28a94b37ecb4b8aabdef21b9f2c4abd1\transformed\firebase-database-20.2.2\AndroidManifest.xml:32:17-109
+meta-data#com.google.firebase.components:com.google.firebase.storage.StorageRegistrar
+ADDED from [com.google.firebase:firebase-storage:20.2.1] C:\Users\GAURAV\.gradle\caches\transforms-3\96e60378f9582b6b43d5073b4ec04e3e\transformed\firebase-storage-20.2.1\AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-storage:20.2.1] C:\Users\GAURAV\.gradle\caches\transforms-3\96e60378f9582b6b43d5073b4ec04e3e\transformed\firebase-storage-20.2.1\AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-storage:20.2.1] C:\Users\GAURAV\.gradle\caches\transforms-3\96e60378f9582b6b43d5073b4ec04e3e\transformed\firebase-storage-20.2.1\AndroidManifest.xml:33:17-107
 provider#com.google.firebase.provider.FirebaseInitProvider
 ADDED from [com.google.firebase:firebase-common:20.3.3] C:\Users\GAURAV\.gradle\caches\transforms-3\bf26ba3c89adeb51e57e1e58f0b15d21\transformed\firebase-common-20.3.3\AndroidManifest.xml:25:9-30:39
 	android:authorities

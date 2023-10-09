@@ -4,12 +4,12 @@
         "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\drawable_suggestion.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\drawable\\suggestion.xml"
-    },
-    {
         "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\drawable_electricianlogo.xml.flat",
         "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\drawable\\electricianlogo.xml"
+    },
+    {
+        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\drawable_suggestion.xml.flat",
+        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\drawable\\suggestion.xml"
     },
     {
         "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\drawable_btnbgradius.xml.flat",
@@ -18,6 +18,10 @@
     {
         "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\drawable_asset_2.xml.flat",
         "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\drawable\\asset_2.xml"
+    },
+    {
+        "merged": "com.example.chatme.app-merged_res-35:/drawable_baseline_download_24.xml.flat",
+        "source": "com.example.chatme.app-main-37:/drawable/baseline_download_24.xml"
     },
     {
         "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
@@ -52,12 +56,12 @@
         "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\drawable_baseline_upload_24.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\drawable\\baseline_upload_24.xml"
-    },
-    {
         "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\layout_sample_sender.xml.flat",
         "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\layout\\sample_sender.xml"
+    },
+    {
+        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\drawable_baseline_upload_24.xml.flat",
+        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\drawable\\baseline_upload_24.xml"
     },
     {
         "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\drawable_welcome1.png.flat",
@@ -128,8 +132,8 @@
         "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\layout\\sample_reciever.xml"
     },
     {
-        "merged": "com.example.chatme.app-merged_res-35:/menu_fileupload.xml.flat",
-        "source": "com.example.chatme.app-main-37:/menu/fileupload.xml"
+        "merged": "com.example.chatme.app-merged_res-35:/layout_activity_documentation.xml.flat",
+        "source": "com.example.chatme.app-main-37:/layout/activity_documentation.xml"
     },
     {
         "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\layout_fragment_chat.xml.flat",
@@ -170,6 +174,10 @@
     {
         "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\layout_activity_home.xml.flat",
         "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "com.example.chatme.app-merged_res-35:/layout_documentationcard.xml.flat",
+        "source": "com.example.chatme.app-main-37:/layout/documentationcard.xml"
     },
     {
         "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\raw_botanimation.json.flat",
