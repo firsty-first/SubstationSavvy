@@ -13,6 +13,7 @@ color colorPrimaryText
 color colorSecondaryText
 color errorHint
 color hometheme
+color hometheme2
 color newtheme
 color primary
 color topcard
@@ -24,6 +25,7 @@ drawable background_page
 drawable baseline_analytics_24
 drawable baseline_location_on_24
 drawable baseline_record_voice_over_24
+drawable baseline_upload_24
 drawable book
 drawable btnbgradius
 drawable cardtwocorner
@@ -73,6 +75,8 @@ id signIn_tv
 id tabLayout
 id timestampRecieved
 id toolbar
+id tv_header
+id uploadpdf
 id userImg
 id userName
 id user_image
@@ -80,6 +84,7 @@ id username
 id viewpager
 id voiceassistbtn
 id weather
+id webView
 layout activity_documentation
 layout activity_home
 layout activity_main
@@ -93,6 +98,7 @@ layout fragment_chat
 layout fragment_story
 layout sample_reciever
 layout sample_sender
+menu fileupload
 menu menuehome
 mipmap chaticon
 mipmap ic_launcher

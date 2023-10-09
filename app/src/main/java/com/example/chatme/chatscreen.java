@@ -63,6 +63,25 @@ public  String spokenText;
         LinearLayoutManager layoutManager=new LinearLayoutManager(getApplicationContext());
         layoutManager.setSmoothScrollbarEnabled(true);
         binding.chatRv.setLayoutManager(layoutManager);
+        textToSpeech = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int status) {
+                if (status == TextToSpeech.SUCCESS) {
+                    int result = textToSpeech.setLanguage(Locale.US);
+
+                    if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
+                        // Handle language data missing or not supported
+                        Log.d("TTs","lang missing");
+                    } else {
+                        Log.d("TTS","asa");
+                    }
+                }
+                else
+                    Log.d("TTS","Initializatiopn  failed");
+
+            }
+        });
+
 
     }
 
@@ -269,7 +288,7 @@ model.isBot=true;
                     storeBOTMsgIndatabase(prediction);
                    // tts(prediction);//might need to shift this
                     Toast.makeText(getApplicationContext(), prediction, Toast.LENGTH_SHORT).show();
-
+tts(prediction);
                     // Example: Display the prediction in a TextView
                     Log.d("god",prediction);
                 } else {
@@ -341,7 +360,44 @@ model.isBot=true;
 
     void tts(String text)
     {
-        textToSpeech.setLanguage(new Locale("en", "IN"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        Locale desiredLocale = new Locale("en", "IN");
+
+        textToSpeech.setLanguage(desiredLocale);
 
 
         if (!text.isEmpty()) {
@@ -372,6 +428,10 @@ model.isBot=true;
 
             }
         });
+
+
+
+
 
     }
 }

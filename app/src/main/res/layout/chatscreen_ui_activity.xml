@@ -92,21 +92,24 @@
             android:layout_gravity="bottom"
             android:gravity="center"
             android:orientation="horizontal"
+            android:layout_marginBottom="8dp"
+            android:paddingTop="2dp"
             app:layout_constraintBottom_toBottomOf="parent">
 
             <EditText
                 android:id="@+id/editTextText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
                 android:layout_weight="9"
                 android:background="@drawable/chat_bg"
                 android:ems="10"
                 android:hint="write here"
-                android:layout_marginStart="5dp"
-                android:textColorHint="@color/white"
-                android:textColor="@color/white"
                 android:inputType="text"
-                android:padding="10dp" />
+                android:padding="10dp"
+                android:textColor="@color/black"
+
+                android:textColorHint="@color/chat_editText" />
 
             <ImageView
                 android:id="@+id/sendBtn"

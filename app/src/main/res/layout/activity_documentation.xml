@@ -14,8 +14,8 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:paddingBottom="10dp"
-            android:paddingTop="0dp"
+            android:paddingBottom="2dp"
+            android:paddingTop="3dp"
             android:orientation="horizontal">
 
             <Button
@@ -72,7 +72,41 @@
 
         </LinearLayout>
     </HorizontalScrollView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/uploadpdf"
 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        app:cardCornerRadius="5dp"
+        android:layout_gravity="end"
+        app:cardUseCompatPadding="true"
+        android:backgroundTint="@color/white"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/baseline_upload_24"
+                android:padding="0dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginHorizontal="2dp"
+                android:text="upload doc"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

@@ -1327,6 +1327,7 @@ color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color hometheme
+color hometheme2
 color m3_appbar_overlay_color
 color m3_assist_chip_icon_tint_color
 color m3_assist_chip_stroke_color
@@ -2498,6 +2499,7 @@ drawable background_page
 drawable baseline_analytics_24
 drawable baseline_location_on_24
 drawable baseline_record_voice_over_24
+drawable baseline_upload_24
 drawable book
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -3102,10 +3104,12 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tv_header
 id unchecked
 id uniform
 id unlabeled
 id up
+id uploadpdf
 id useLogo
 id userImg
 id userName
@@ -3123,6 +3127,7 @@ id visible
 id visible_removing_fragment_view_tag
 id voiceassistbtn
 id weather
+id webView
 id west
 id wide
 id withText
@@ -3321,6 +3326,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+menu fileupload
 menu menuehome
 mipmap chaticon
 mipmap ic_launcher

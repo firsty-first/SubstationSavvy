@@ -3,5 +3,8 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
 android:shape="rectangle">
 <corners android:radius="30dp"/>
-<solid android:color="#141854"/>
+<stroke android:width="3dp" android:color="@color/hometheme2"/>
+    <maxHeight android:maxHeight="30dp"/>
+<solid android:color="#50538C"/>
+    <gradient android:angle="45" android:endColor="#B6565DDE" android:startColor="#B78591F6"/>
 </shape>

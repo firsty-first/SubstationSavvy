@@ -6,11 +6,27 @@
     android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".pdfViewer">
-    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="40dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="View PDF"
+        android:textColor="#ffffff"
+        android:id="@+id/tv_header"
+        android:textSize="18dp"
+        android:gravity="center"></TextView>
 
 
-    </FrameLayout>
+
+    <WebView
+
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
 
 </LinearLayout>
