@@ -27,7 +27,7 @@
                 android:backgroundTint="@color/hometheme"
                 android:hapticFeedbackEnabled="true"
                 android:shadowRadius="@android:integer/config_mediumAnimTime"
-                android:text="safety" />
+                android:text="transformer" />
 
             <Button
                 android:id="@+id/button2"
@@ -37,7 +37,7 @@
 
                 android:backgroundTint="@color/hometheme"
                 android:hapticFeedbackEnabled="true"
-                android:text="Transformer" />
+                android:text="Transmission" />
 
             <Button
                 android:id="@+id/button3"
@@ -47,7 +47,7 @@
 
                 android:backgroundTint="@color/hometheme"
                 android:hapticFeedbackEnabled="true"
-                android:text="loha" />
+                android:text="circuit breakers"  />
 
             <Button
                 android:id="@+id/button4"
@@ -57,7 +57,7 @@
 
                 android:backgroundTint="@color/hometheme"
                 android:hapticFeedbackEnabled="true"
-                android:text="teena" />
+                android:text="switch gears" />
 
             <Button
                 android:id="@+id/button5"
@@ -67,8 +67,70 @@
 
                 android:backgroundTint="@color/hometheme"
                 android:hapticFeedbackEnabled="true"
-                android:text="plastic" />
+                android:text="Isolators" />
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
 
+                android:backgroundTint="@color/hometheme"
+                android:hapticFeedbackEnabled="true"
+                android:text="Busbars" />
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:backgroundTint="@color/hometheme"
+                android:hapticFeedbackEnabled="true"
+                android:text="Relays" />
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:backgroundTint="@color/hometheme"
+                android:hapticFeedbackEnabled="true"
+                android:text="Capacitor Banks" />
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:backgroundTint="@color/hometheme"
+                android:hapticFeedbackEnabled="true"
+                android:text="Voltage Regulators" />
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:backgroundTint="@color/hometheme"
+                android:hapticFeedbackEnabled="true"
+                android:text="Control Panels" />
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:backgroundTint="@color/hometheme"
+                android:hapticFeedbackEnabled="true"
+                android:text="Battery Systems" />
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:backgroundTint="@color/hometheme"
+                android:hapticFeedbackEnabled="true"
+                android:text="Grounding Systems" />
 
         </LinearLayout>
     </HorizontalScrollView>
@@ -110,7 +172,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvDoc"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
 
         />
 

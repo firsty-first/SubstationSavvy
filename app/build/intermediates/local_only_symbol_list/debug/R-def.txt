@@ -48,10 +48,17 @@ id backbtn
 id btn_signIN
 id btn_signUp
 id button1
+id button10
+id button11
+id button13
 id button2
 id button3
 id button4
 id button5
+id button6
+id button7
+id button8
+id button9
 id chabotimage
 id chat_rv
 id customBackgroundShape
@@ -71,6 +78,7 @@ id messageReciever
 id messagesender
 id name
 id pdfNameTextView
+id pdfheader
 id rvDoc
 id sendBtn
 id setting
@@ -78,7 +86,6 @@ id signIn_tv
 id tabLayout
 id timestampRecieved
 id toolbar
-id tv_header
 id uploadpdf
 id userImg
 id userName

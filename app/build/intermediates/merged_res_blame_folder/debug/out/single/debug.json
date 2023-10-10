@@ -12,16 +12,16 @@
         "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\drawable\\suggestion.xml"
     },
     {
+        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\layout_documentationcard.xml.flat",
+        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\layout\\documentationcard.xml"
+    },
+    {
         "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\drawable_btnbgradius.xml.flat",
         "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\drawable\\btnbgradius.xml"
     },
     {
         "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\drawable_asset_2.xml.flat",
         "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\drawable\\asset_2.xml"
-    },
-    {
-        "merged": "com.example.chatme.app-merged_res-35:/drawable_baseline_download_24.xml.flat",
-        "source": "com.example.chatme.app-main-37:/drawable/baseline_download_24.xml"
     },
     {
         "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
@@ -132,10 +132,6 @@
         "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\layout\\sample_reciever.xml"
     },
     {
-        "merged": "com.example.chatme.app-merged_res-35:/layout_activity_documentation.xml.flat",
-        "source": "com.example.chatme.app-main-37:/layout/activity_documentation.xml"
-    },
-    {
         "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\layout_fragment_chat.xml.flat",
         "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\layout\\fragment_chat.xml"
     },
@@ -166,6 +162,10 @@
     {
         "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\drawable_baseline_download_24.xml.flat",
+        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\drawable\\baseline_download_24.xml"
     },
     {
         "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\drawable_chatbot.png.flat",

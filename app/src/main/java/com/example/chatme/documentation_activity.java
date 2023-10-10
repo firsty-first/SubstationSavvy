@@ -41,7 +41,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public class documentation_activity extends AppCompatActivity {
+public class documentation_activity extends AppCompatActivity{
 ActivityDocumentationBinding binding;
     private List<modelDoc> pdfNamesList;
     private PDFAdapter pdfAdapter;
@@ -73,7 +73,33 @@ FirebaseAuth auth;
         PopupMenu popupMenu=new PopupMenu(this,binding.uploadpdf);
         popupMenu.getMenuInflater().inflate(R.menu.fileupload,popupMenu.getMenu());
         binding.uploadpdf.setOnClickListener(v -> {
-            popupMenu.show();
+            String uid = FirebaseAuth.getInstance().getCurrentUser().getUid();
+            DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference().child("user").child(uid);
+
+            databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+                    if (dataSnapshot.exists()) {
+                        String roleName = dataSnapshot.child("userName").getValue(String.class);
+
+                        if ("admin".equalsIgnoreCase(roleName)) {
+                            popupMenu.show();
+                        } else {
+                            // The current user is not an admin
+                            Toast.makeText(documentation_activity.this, "u do not have permission", Toast.LENGTH_SHORT).show();
+                        }
+                    } else {
+                        // Handle the case where the user's data is not found
+                    }
+                }
+
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+                    // Handle any errors here
+                }
+            });
+
+
         });
         pdfPickerLauncher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(),
                 result -> {
@@ -100,33 +126,118 @@ FirebaseAuth auth;
         });
         binding.rvDoc.setLayoutManager(new LinearLayoutManager(this));
         pdfNamesList = new ArrayList<>();
-        pdfAdapter = new PDFAdapter(pdfNamesList,getApplicationContext());
+        pdfAdapter = new PDFAdapter(pdfNamesList, getApplicationContext(), new PDFAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(int position) {
+                Toast.makeText(documentation_activity.this, "Hiiiiii", Toast.LENGTH_SHORT).show();
+//                Intent ipdfViewer=new Intent(documentation_activity.this,pdfViewer.class);
+//                ipdfViewer.putExtra("url",)
+            }
+        });
+        pdfAdapter.setOnItemClickListener(new PDFAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(int position) {
+                Log.d("rvclick","yessssssssssssss");
+                // Handle the item click here
+                modelDoc clickedItem = pdfNamesList.get(position);
+                String filename = clickedItem.getFilename();
+                String url = clickedItem.getUrl();
+
+                // Launch another activity with the selected item's data
+                Intent intent = new Intent(getApplicationContext(), pdfViewer.class);
+                intent.putExtra("filename", filename);
+                intent.putExtra("url", url);
+                startActivity(intent);
+            }
+        });
+
         binding.rvDoc.setAdapter(pdfAdapter);
         // Retrieve PDF file names from Firebase Realtime Database
-        retrievePDFNames();
+        retrievePDFNames(pdfCategory);
+binding.button1.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        retrievePDFNames(binding.button1.getText().toString());
+    }
+});
+        binding.button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                retrievePDFNames(binding.button1.getText().toString());
+            }
+        });
+        binding.button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                retrievePDFNames(binding.button1.getText().toString());
+            }
+        });
+        binding.button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                retrievePDFNames(binding.button1.getText().toString());
+            }
+        });
+        binding.button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                retrievePDFNames(binding.button1.getText().toString());
+            }
+        });binding.button6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                retrievePDFNames(binding.button1.getText().toString());
+            }
+        });
+        binding.button7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                retrievePDFNames(binding.button1.getText().toString());
+            }
+        });
+        binding.button8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                retrievePDFNames(binding.button1.getText().toString());
+            }
+        });
+        binding.button9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                retrievePDFNames(binding.button1.getText().toString());
+            }
+        });
+        binding.button10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                retrievePDFNames(binding.button1.getText().toString());
+            }
+        });
+        binding.button11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                retrievePDFNames(binding.button1.getText().toString());
+            }
+        });
+        binding.button13.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                retrievePDFNames(binding.button1.getText().toString());
+            }
+        });
+
+
+
 
 
     }
-    private void retrievePDFNames() {
-        database.getReference().child("pdf").child(pdfCategory).addValueEventListener(new ValueEventListener() {
+    private void retrievePDFNames(String node) {
+        database.getReference().child("pdf").child(node).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 pdfNamesList.clear();
                 for (DataSnapshot pdfSnapshot : dataSnapshot.getChildren()) {
-//                    modelDoc pdfDoc = pdfSnapshot.getValue(modelDoc.class);
-//                    if (pdfDoc != null) {
-//                        pdfNamesList.add(pdfDoc);
-//                    }
-//                    Object data = pdfSnapshot.getValue();
 //
-//                    // Check if the data is not null and is of the expected type (modelDoc)
-//                    if (data instanceof modelDoc) {
-//                        modelDoc pdfDoc = (modelDoc) data;
-//                        pdfNamesList.add(pdfDoc);
-//                    } else {
-//                        // Handle the case where the data is not of the expected type
-//                        Log.e("FirebaseError", "Unexpected data type in database: " + data.toString());
-//                    }
                     Map<String, Object> dataMap = (Map<String, Object>) pdfSnapshot.getValue();
 
                     if (dataMap != null) {
@@ -226,6 +337,7 @@ else
         }
         return result;
     }
+
 }
 
 

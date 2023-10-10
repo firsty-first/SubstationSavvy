@@ -2716,10 +2716,17 @@ id browser_actions_menu_view
 id btn_signIN
 id btn_signUp
 id button1
+id button10
+id button11
+id button13
 id button2
 id button3
 id button4
 id button5
+id button6
+id button7
+id button8
+id button9
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -2969,6 +2976,7 @@ id password_toggle
 id path
 id pathRelative
 id pdfNameTextView
+id pdfheader
 id peekHeight
 id percent
 id pin
@@ -3107,7 +3115,6 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
-id tv_header
 id unchecked
 id uniform
 id unlabeled

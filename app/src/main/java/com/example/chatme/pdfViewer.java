@@ -2,7 +2,9 @@ package com.example.chatme;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.webkit.WebViewClient;
 import android.widget.PopupMenu;
@@ -20,37 +22,25 @@ FirebaseDatabase database;
         super.onCreate(savedInstanceState);
         binding=ActivityPdfViewerBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-//        PopupMenu popupMenu=new PopupMenu(this,binding.uploadpdf);
-//       popupMenu.getMenuInflater().inflate(R.menu.fileupload,popupMenu.getMenu());
-//        binding.uploadpdf.setOnClickListener(v -> {
-//            popupMenu.show();
-//        });
-//        popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
-//            @Override
-//            public boolean onMenuItemClick(MenuItem menuItem) {
-//                uploadPdf(String.valueOf(menuItem.getTitle()));
-//                Toast.makeText(pdfViewer.this, String.valueOf(menuItem.getTitle()), Toast.LENGTH_SHORT).show();
-//                return  true;
-//            }
-//        });
+        Intent intent = getIntent();
 
+        // Retrieve the data from the intent using the keys you used in the sender activity
+        String filename = intent.getStringExtra("filename");
+        String url = intent.getStringExtra("url");
+        binding.pdfheader.setText(filename);
+viewPdf(url,filename);
 
     }
-    //upload pdf to specific child
-    private void uploadPdf(String child)
-    {
-        database=FirebaseDatabase.getInstance();
-        //database.getReference().child("pdf").child()
 
-    }
-    void viewPdf()
+    void viewPdf(String pdfUrl, String filename)
     {
         binding.webView.setWebViewClient(new WebViewClient());
         binding.webView.getSettings().setJavaScriptEnabled(true);
-
-
-        binding.webView.loadUrl("http://docs.google.com/gview?embedded=true&url=\" + myPdfUr");
+//        String pdfurl="http://docs.google.com/gview?embedded=true&url=/";
+        Log.d("pdfurl","https://docs.google.com/gview?embedded=true&url=" +pdfUrl);
+        binding.webView.loadUrl(pdfUrl);
         binding.webView.getSettings().setSupportZoom(true);
         binding.webView.getSettings().setBuiltInZoomControls(true);
+
     }
 }
