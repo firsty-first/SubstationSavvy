@@ -35,14 +35,19 @@
         android:testOnly="true"
         android:theme="@style/Theme.Chatme" >
         <activity
-            android:name="com.example.chatme.pdfViewer"
+            android:name="com.example.chatme.suggestActivity"
             android:exported="false" />
+        <activity
+            android:name="com.example.chatme.pdfViewer"
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.example.chatme.documentation_activity"
             android:exported="false" />
         <activity
             android:name="com.example.chatme.splashscreen"
-            android:exported="true" >
+            android:exported="true"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -54,13 +59,16 @@
             android:exported="false" />
         <activity
             android:name="com.example.chatme.HomeActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.example.chatme.signUpActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.example.chatme.signInActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait" />
 
         <provider
             android:name="com.squareup.picasso.PicassoProvider"

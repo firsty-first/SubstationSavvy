@@ -116,6 +116,12 @@ FirebaseAuth auth;
 //        binding.chatRv.setLayoutManager(layoutManager);
 
 //getWeather();
+        binding.suggest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(),suggestActivity.class));
+            }
+        });
         binding.docBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

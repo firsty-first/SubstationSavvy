@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
@@ -72,6 +73,10 @@ FirebaseAuth auth;
         database=FirebaseDatabase.getInstance();
         PopupMenu popupMenu=new PopupMenu(this,binding.uploadpdf);
         popupMenu.getMenuInflater().inflate(R.menu.fileupload,popupMenu.getMenu());
+        View decorView = getWindow().getDecorView();
+        int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_FULLSCREEN;
+        decorView.setSystemUiVisibility(uiOptions);
+
         binding.uploadpdf.setOnClickListener(v -> {
             String uid = FirebaseAuth.getInstance().getCurrentUser().getUid();
             DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference().child("user").child(uid);
@@ -144,10 +149,24 @@ FirebaseAuth auth;
                 String url = clickedItem.getUrl();
 
                 // Launch another activity with the selected item's data
-                Intent intent = new Intent(getApplicationContext(), pdfViewer.class);
-                intent.putExtra("filename", filename);
-                intent.putExtra("url", url);
-                startActivity(intent);
+//                Intent intent = new Intent(getApplicationContext(), pdfViewer.class);
+//                intent.putExtra("filename", filename);
+//                intent.putExtra("url", url);
+//                startActivity(intent);
+
+
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setDataAndType(Uri.parse(url), "application/pdf");
+                intent.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+
+                PackageManager manager = getPackageManager();
+                if (intent.resolveActivity(manager) != null) {
+                    startActivity(intent);
+                } else {
+                    // Handle the case where no PDF viewer is available
+                    Toast.makeText(getApplicationContext(), "No PDF viewer installed", Toast.LENGTH_SHORT).show();
+                }
+
             }
         });
 

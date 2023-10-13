@@ -92,7 +92,7 @@ android:backgroundTint="#6D77FA"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:gravity="end"
-                        android:text="38 C in durgapur "
+                        android:text="32 C in durgapur "
                         android:textColor="@color/white"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -238,7 +238,7 @@ android:backgroundTint="#6D77FA"
                         android:orientation="vertical">
 
                         <ImageView
-
+android:id="@+id/suggest"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"

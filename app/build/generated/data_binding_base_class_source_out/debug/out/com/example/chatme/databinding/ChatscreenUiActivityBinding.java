@@ -33,6 +33,9 @@ public final class ChatscreenUiActivityBinding implements ViewBinding {
   public final EditText editTextText;
 
   @NonNull
+  public final ImageView imagebtn;
+
+  @NonNull
   public final LinearLayout linear;
 
   @NonNull
@@ -51,13 +54,14 @@ public final class ChatscreenUiActivityBinding implements ViewBinding {
   public final ImageView voiceassistbtn;
 
   private ChatscreenUiActivityBinding(@NonNull LinearLayout rootView, @NonNull ImageView backbtn,
-      @NonNull RecyclerView chatRv, @NonNull EditText editTextText, @NonNull LinearLayout linear,
-      @NonNull TextView name, @NonNull ImageView sendBtn, @NonNull Toolbar toolbar,
-      @NonNull ImageView userImage, @NonNull ImageView voiceassistbtn) {
+      @NonNull RecyclerView chatRv, @NonNull EditText editTextText, @NonNull ImageView imagebtn,
+      @NonNull LinearLayout linear, @NonNull TextView name, @NonNull ImageView sendBtn,
+      @NonNull Toolbar toolbar, @NonNull ImageView userImage, @NonNull ImageView voiceassistbtn) {
     this.rootView = rootView;
     this.backbtn = backbtn;
     this.chatRv = chatRv;
     this.editTextText = editTextText;
+    this.imagebtn = imagebtn;
     this.linear = linear;
     this.name = name;
     this.sendBtn = sendBtn;
@@ -111,6 +115,12 @@ public final class ChatscreenUiActivityBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.imagebtn;
+      ImageView imagebtn = ViewBindings.findChildViewById(rootView, id);
+      if (imagebtn == null) {
+        break missingId;
+      }
+
       id = R.id.linear;
       LinearLayout linear = ViewBindings.findChildViewById(rootView, id);
       if (linear == null) {
@@ -148,7 +158,7 @@ public final class ChatscreenUiActivityBinding implements ViewBinding {
       }
 
       return new ChatscreenUiActivityBinding((LinearLayout) rootView, backbtn, chatRv, editTextText,
-          linear, name, sendBtn, toolbar, userImage, voiceassistbtn);
+          imagebtn, linear, name, sendBtn, toolbar, userImage, voiceassistbtn);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -7,7 +7,6 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -19,14 +18,19 @@
         android:theme="@style/Theme.Chatme"
         tools:targetApi="31">
         <activity
-            android:name=".pdfViewer"
+            android:name=".suggestActivity"
             android:exported="false" />
+        <activity
+            android:name=".pdfViewer"
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".documentation_activity"
             android:exported="false" />
         <activity
             android:name=".splashscreen"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -38,13 +42,16 @@
             android:exported="false" />
         <activity
             android:name=".HomeActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".signUpActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".signInActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

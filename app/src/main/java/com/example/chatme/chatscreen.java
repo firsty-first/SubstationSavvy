@@ -57,7 +57,11 @@ public  String spokenText;
     @Override
     protected void onStart() {
         super.onStart();
-   messagesModels=new ArrayList<>();
+        View decorView = getWindow().getDecorView();
+        int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_FULLSCREEN;
+        decorView.setSystemUiVisibility(uiOptions);
+
+        messagesModels=new ArrayList<>();
       chatAdapter=new ChatAdapter(messagesModels,getApplicationContext());
         binding.chatRv.setAdapter(chatAdapter);
         LinearLayoutManager layoutManager=new LinearLayoutManager(getApplicationContext());
@@ -193,7 +197,12 @@ database.getReference().child("chats")
 Log.d("db","Dberror");
             }
         });
+binding.imagebtn.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
 
+    }
+});
     }//end of oncreate
 
     void storeMsgIndatabase(String msg)
@@ -360,40 +369,6 @@ tts(prediction);
 
     void tts(String text)
     {
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         Locale desiredLocale = new Locale("en", "IN");
 

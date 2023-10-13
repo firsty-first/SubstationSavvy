@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
+import android.view.View;
 import android.webkit.WebViewClient;
 import android.widget.PopupMenu;
 import android.widget.Toast;
@@ -22,6 +23,10 @@ FirebaseDatabase database;
         super.onCreate(savedInstanceState);
         binding=ActivityPdfViewerBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        View decorView = getWindow().getDecorView();
+        int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_FULLSCREEN;
+        decorView.setSystemUiVisibility(uiOptions);
+
         Intent intent = getIntent();
 
         // Retrieve the data from the intent using the keys you used in the sender activity

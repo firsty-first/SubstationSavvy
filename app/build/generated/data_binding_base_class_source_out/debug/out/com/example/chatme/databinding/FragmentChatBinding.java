@@ -40,6 +40,9 @@ public final class FragmentChatBinding implements ViewBinding {
   public final LinearLayout linear;
 
   @NonNull
+  public final ImageView suggest;
+
+  @NonNull
   public final TextView username;
 
   @NonNull
@@ -48,7 +51,8 @@ public final class FragmentChatBinding implements ViewBinding {
   private FragmentChatBinding(@NonNull LinearLayout rootView, @NonNull TextView Greeting,
       @NonNull ImageView chabotimage, @NonNull ImageView customBackgroundShape,
       @NonNull FrameLayout customCardViewContainer, @NonNull ImageView docBtn,
-      @NonNull LinearLayout linear, @NonNull TextView username, @NonNull TextView weather) {
+      @NonNull LinearLayout linear, @NonNull ImageView suggest, @NonNull TextView username,
+      @NonNull TextView weather) {
     this.rootView = rootView;
     this.Greeting = Greeting;
     this.chabotimage = chabotimage;
@@ -56,6 +60,7 @@ public final class FragmentChatBinding implements ViewBinding {
     this.customCardViewContainer = customCardViewContainer;
     this.docBtn = docBtn;
     this.linear = linear;
+    this.suggest = suggest;
     this.username = username;
     this.weather = weather;
   }
@@ -119,6 +124,12 @@ public final class FragmentChatBinding implements ViewBinding {
 
       LinearLayout linear = (LinearLayout) rootView;
 
+      id = R.id.suggest;
+      ImageView suggest = ViewBindings.findChildViewById(rootView, id);
+      if (suggest == null) {
+        break missingId;
+      }
+
       id = R.id.username;
       TextView username = ViewBindings.findChildViewById(rootView, id);
       if (username == null) {
@@ -132,7 +143,8 @@ public final class FragmentChatBinding implements ViewBinding {
       }
 
       return new FragmentChatBinding((LinearLayout) rootView, Greeting, chabotimage,
-          customBackgroundShape, customCardViewContainer, docBtn, linear, username, weather);
+          customBackgroundShape, customCardViewContainer, docBtn, linear, suggest, username,
+          weather);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

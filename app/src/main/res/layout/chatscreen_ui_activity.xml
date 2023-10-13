@@ -106,7 +106,7 @@
                 android:ems="10"
                 android:hint="write here"
                 android:inputType="text"
-                android:padding="10dp"
+                android:padding="16dp"
                 android:textColor="@color/black"
 
                 android:textColorHint="@color/chat_editText" />
@@ -120,12 +120,35 @@
                 android:layout_gravity="center"
                 app:srcCompat="@drawable/send_24" />
             <ImageView
+                android:id="@+id/imagebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/baseline_photo_camera_24" />
+            <ImageView
                 android:id="@+id/voiceassistbtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_gravity="center"
                 app:srcCompat="@drawable/baseline_record_voice_over_24" />
+<!--            <ImageView-->
+<!--                android:id="@+id/imageView"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/baseline_photo_camera_24"-->
+<!--                android:layout_gravity="start"-->
+<!--                android:padding="16dp"-->
+<!--                />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/editText"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="Enter your text here"-->
+<!--                android:padding="16dp"-->
+<!--                />-->
         </LinearLayout>
 
         <!-- Right most TextView -->

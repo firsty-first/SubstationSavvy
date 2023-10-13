@@ -25,6 +25,7 @@ drawable background_page
 drawable baseline_analytics_24
 drawable baseline_download_24
 drawable baseline_location_on_24
+drawable baseline_photo_camera_24
 drawable baseline_record_voice_over_24
 drawable baseline_upload_24
 drawable book
@@ -47,6 +48,7 @@ id animation_view
 id backbtn
 id btn_signIN
 id btn_signUp
+id button
 id button1
 id button10
 id button11
@@ -64,12 +66,15 @@ id chat_rv
 id customBackgroundShape
 id customCardViewContainer
 id docBtn
+id editText1
+id editText2
 id editTextText
 id editTextTextEmailAddress
 id editTextTextPassword
 id edittext_name
 id guide
 id imageView
+id imagebtn
 id lastmessage
 id linear
 id linearlay
@@ -83,7 +88,10 @@ id rvDoc
 id sendBtn
 id setting
 id signIn_tv
+id suggest
 id tabLayout
+id textView1
+id textView2
 id timestampRecieved
 id toolbar
 id uploadpdf
@@ -101,6 +109,7 @@ layout activity_main
 layout activity_pdf_viewer
 layout activity_sign_in
 layout activity_splashscreen
+layout activity_suggest
 layout chatcard
 layout chatscreen_ui_activity
 layout documentationcard

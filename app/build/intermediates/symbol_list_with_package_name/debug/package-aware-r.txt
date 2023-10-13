@@ -2499,6 +2499,7 @@ drawable background_page
 drawable baseline_analytics_24
 drawable baseline_download_24
 drawable baseline_location_on_24
+drawable baseline_photo_camera_24
 drawable baseline_record_voice_over_24
 drawable baseline_upload_24
 drawable book
@@ -2715,6 +2716,7 @@ id browser_actions_menu_items
 id browser_actions_menu_view
 id btn_signIN
 id btn_signUp
+id button
 id button1
 id button10
 id button11
@@ -2808,6 +2810,8 @@ id easeIn
 id easeInOut
 id easeOut
 id east
+id editText1
+id editText2
 id editTextText
 id editTextTextEmailAddress
 id editTextTextPassword
@@ -2859,6 +2863,7 @@ id ignore
 id ignoreRequest
 id image
 id imageView
+id imagebtn
 id immediateStop
 id included
 id info
@@ -3061,6 +3066,7 @@ id stop
 id stretch
 id submenuarrow
 id submit_area
+id suggest
 id supportScrollUp
 id tabLayout
 id tabMode
@@ -3088,6 +3094,8 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView1
+id textView2
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3240,6 +3248,7 @@ layout activity_main
 layout activity_pdf_viewer
 layout activity_sign_in
 layout activity_splashscreen
+layout activity_suggest
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout chatcard

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.view.WindowManager;
 
 import com.example.chatme.databinding.ActivitySplashscreenBinding;
@@ -18,7 +19,11 @@ ActivitySplashscreenBinding binding;
         setContentView(binding.getRoot());
 //        getSupportActionBar().hide;
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_ALT_FOCUSABLE_IM);
-Thread thread=new Thread(){
+        View decorView = getWindow().getDecorView();
+        int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_FULLSCREEN;
+        decorView.setSystemUiVisibility(uiOptions);
+
+        Thread thread=new Thread(){
     @Override
     public void run() {
         super.run();
