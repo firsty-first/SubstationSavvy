@@ -32,6 +32,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
+import java.util.Map;
 
 import okhttp3.OkHttpClient;
 import retrofit2.Call;
@@ -51,7 +52,7 @@ public class chatscreen extends AppCompatActivity {
     private ApiService apiService;
     Retrofit retrofit;
     TextToSpeech textToSpeech;
-    private final String baseUrl = "https://testapi-8skm.onrender.com";
+    private final String baseUrl = "https://loadqua.onrender.com";
 String prediction;
 public  String spokenText;
     @Override
@@ -268,60 +269,88 @@ model.isBot=true;
                     });
         }
     }
+    public void getPrediction(String query) {
+        Map<String, String> input = new HashMap<>();
+        input.put("query", query);
 
-    String getMessageFromBot(String usermessage)
-    {
-        Log.d("check","got into godplzhelp");
-        Log.d("here is the uri",usermessage);
+        Call<Map<String, String>> call = apiService.getPrediction(input);
+        call.enqueue(new Callback<Map<String, String>>() {
+            @Override
+            public void onResponse(Call<Map<String, String>> call, Response<Map<String, String>> response) {
+                if (response.isSuccessful()) {
+                    Map<String, String> predictionResponse = response.body();
+                    // Handle the prediction response as needed
 
+                } else {
+                    // Handle unsuccessful response
+                }
+            }
+            @Override
+            public void onFailure(Call<Map<String, String>> call, Throwable t) {
+                // Handle failure
+            }
+        });
+    }
+    String getMessageFromBot(String userMessage) {
+        Log.d("check", "got into godplzhelp");
+        Log.d("here is the uri", userMessage);
 
-// Create a ModelInput object with the necessary data
-        Log.d("uriiiiiiii check mid",usermessage);
-        ModelInput input = new ModelInput(usermessage);
-        input.setMessage(usermessage);
-        Log.d("uriiiiiiii chek after mid",input.getMessage().toString());
+        // Create a Map representing the request body
+        Map<String, String> requestBody = new HashMap<>();
+        requestBody.put("query", userMessage);
 
-        //input.setImgUrl("https://example.com/image.jpg"); // Replace with your image URL
-// Make the API call
-        Call<String> call = apiService.getPredictionString(input);
-        call.enqueue(new Callback<String>() {
+        // Make the API call
+        Call<Map<String, String>> call = apiService.getPredictionString(requestBody);
+        call.enqueue(new Callback<Map<String, String>>() {
 
             @Override
-            public void onResponse(Call<String> call, Response<String> response) {
-                Log.i("checkkkkkk","api call godHelp");
-                Log.i("checkkkkkk",input.getMessage());
+            public void onResponse(Call<Map<String, String>> call, Response<Map<String, String>> response) {
+                Log.i("checkkkkkk", "api call godHelp");
+                Log.i("checkkkkkk", userMessage);
                 if (response.isSuccessful()) {
-                    // Handle the string response here
-                    prediction = response.body();
+                    // Handle the response here
+                    Map<String, String> predictionMap = response.body();
+                    Log.d("response",predictionMap.get("responses"));
+                    // Assuming your prediction is a key-value pair in the response
+                    if (predictionMap != null && predictionMap.containsKey("responses")) {
+                        String prediction = predictionMap.get("responses");
 
-                    storeBOTMsgIndatabase(prediction);
-                   // tts(prediction);//might need to shift this
-                    Toast.makeText(getApplicationContext(), prediction, Toast.LENGTH_SHORT).show();
-tts(prediction);
-                    // Example: Display the prediction in a TextView
-                    Log.d("god",prediction);
+                        // Further processing or UI updates
+                        storeBOTMsgIndatabase(prediction);
+                        tts(prediction);
+                        Toast.makeText(getApplicationContext(), prediction, Toast.LENGTH_SHORT).show();
+
+                        // Example: Display the prediction in a TextView
+                        Log.d("god", prediction);
+                    } else {
+                        // Handle the case where the response does not contain the expected data
+                        prediction = "Unexpected response format";
+                        Log.d("god", prediction);
+                    }
                 } else {
                     // Handle error responses
                     // Example: Display an error message
-                    prediction="api error";
-                    Log.d("god",prediction);
-
+                    prediction = "API error";
+                    Log.d("god", prediction);
                 }
             }
 
             @Override
-            public void onFailure(Call<String> call, Throwable t) {
-                // Handle network or other errors
-                // Example: Display a network error message
-                Log.d("Network Error: " , t.getMessage());
+            public void onFailure(Call<Map<String, String>> call, Throwable t) {
+                // Handle failure
+                prediction = "API call failed";
+                Log.d("god", prediction);
             }
         });
+
+        // Return value or handle asynchronously as needed
         return prediction;
     }
 
 
 
-        private static final int SPEECH_REQUEST_CODE = 0;
+
+    private static final int SPEECH_REQUEST_CODE = 0;
 
 // Create an intent that can start the Speech Recognizer activity
         private void speechRecognizer() {

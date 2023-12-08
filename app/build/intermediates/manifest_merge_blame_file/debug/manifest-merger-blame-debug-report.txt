@@ -6,22 +6,22 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="25"
-8-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml
+8-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="33" />
-9-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml
+9-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.WAKE_LOCK" />
-11-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:5:5-68
-11-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:5:22-65
+11-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:5:5-68
+11-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:5:22-65
 12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-12-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:6:5-80
-12-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:6:22-77
+12-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:6:5-80
+12-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:6:22-77
 13    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-13-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:7:5-79
-13-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:7:22-76
+13-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:7:5-79
+13-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:7:22-76
 14    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-14-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:8:5-81
-14-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:8:22-78
+14-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:8:5-81
+14-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:8:22-78
 15    <uses-permission android:name="android.permission.INTERNET" />
 15-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\GAURAV\.gradle\caches\transforms-3\c684886053b01c9ee181549294ae56ca\transformed\firebase-auth-22.1.1\AndroidManifest.xml:25:5-67
 15-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\GAURAV\.gradle\caches\transforms-3\c684886053b01c9ee181549294ae56ca\transformed\firebase-auth-22.1.1\AndroidManifest.xml:25:22-64
@@ -41,97 +41,97 @@
 22-->[androidx.core:core:1.9.0] C:\Users\GAURAV\.gradle\caches\transforms-3\57c95f7bce2a4c36ea305cb3932f8371\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 23
 24    <application
-24-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:10:5-55:19
+24-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:10:5-55:19
 25        android:allowBackup="true"
-25-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:11:9-35
+25-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:11:9-35
 26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 26-->[androidx.core:core:1.9.0] C:\Users\GAURAV\.gradle\caches\transforms-3\57c95f7bce2a4c36ea305cb3932f8371\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 27        android:dataExtractionRules="@xml/data_extraction_rules"
-27-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:12:9-65
+27-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:12:9-65
 28        android:debuggable="true"
 29        android:extractNativeLibs="false"
 30        android:fullBackupContent="@xml/backup_rules"
-30-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:13:9-54
+30-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:13:9-54
 31        android:icon="@mipmap/chaticon"
-31-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:14:9-40
+31-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:14:9-40
 32        android:label="@string/app_name"
-32-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:15:9-41
+32-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:15:9-41
 33        android:roundIcon="@mipmap/chaticon"
-33-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:16:9-45
+33-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:16:9-45
 34        android:supportsRtl="true"
-34-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:17:9-35
+34-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:17:9-35
 35        android:testOnly="true"
 36        android:theme="@style/Theme.Chatme" >
-36-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:18:9-44
+36-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:18:9-44
 37        <activity
-37-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:20:9-22:40
+37-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:20:9-22:40
 38            android:name="com.example.chatme.suggestActivity"
-38-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:21:13-44
+38-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:21:13-44
 39            android:exported="false" />
-39-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:22:13-37
+39-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:22:13-37
 40        <activity
-40-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:23:9-26:52
+40-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:23:9-26:52
 41            android:name="com.example.chatme.pdfViewer"
-41-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:24:13-38
+41-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:24:13-38
 42            android:exported="false"
-42-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:25:13-37
+42-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:25:13-37
 43            android:screenOrientation="portrait" />
-43-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:26:13-49
+43-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:26:13-49
 44        <activity
-44-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:27:9-29:40
+44-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:27:9-29:40
 45            android:name="com.example.chatme.documentation_activity"
-45-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:28:13-51
+45-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:28:13-51
 46            android:exported="false" />
-46-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:29:13-37
+46-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:29:13-37
 47        <activity
-47-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:30:9-39:20
+47-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:30:9-39:20
 48            android:name="com.example.chatme.splashscreen"
-48-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:31:13-41
+48-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:31:13-41
 49            android:exported="true"
-49-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:32:13-36
+49-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:32:13-36
 50            android:screenOrientation="portrait" >
-50-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:33:13-49
+50-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:33:13-49
 51            <intent-filter>
-51-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:34:13-38:29
+51-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:34:13-38:29
 52                <action android:name="android.intent.action.MAIN" />
-52-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:35:17-69
-52-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:35:25-66
+52-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:35:17-69
+52-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:35:25-66
 53
 54                <category android:name="android.intent.category.LAUNCHER" />
-54-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:37:17-77
-54-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:37:27-74
+54-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:37:17-77
+54-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:37:27-74
 55            </intent-filter>
 56        </activity>
 57        <activity
-57-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:40:9-42:40
+57-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:40:9-42:40
 58            android:name="com.example.chatme.chatscreen"
-58-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:41:13-39
+58-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:41:13-39
 59            android:exported="false" />
-59-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:42:13-37
+59-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:42:13-37
 60        <activity
-60-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:43:9-46:52
+60-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:43:9-46:52
 61            android:name="com.example.chatme.HomeActivity"
-61-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:44:13-41
+61-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:44:13-41
 62            android:exported="false"
-62-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:45:13-37
+62-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:45:13-37
 63            android:screenOrientation="portrait" />
-63-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:46:13-49
+63-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:46:13-49
 64        <activity
-64-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:47:9-50:52
+64-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:47:9-50:52
 65            android:name="com.example.chatme.signUpActivity"
-65-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:48:13-43
+65-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:48:13-43
 66            android:exported="false"
-66-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:49:13-37
+66-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:49:13-37
 67            android:screenOrientation="portrait" />
-67-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:50:13-49
+67-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:50:13-49
 68        <activity
-68-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:51:9-54:52
+68-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:51:9-54:52
 69            android:name="com.example.chatme.signInActivity"
-69-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:52:13-43
+69-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:52:13-43
 70            android:exported="true"
-70-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:53:13-36
+70-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:53:13-36
 71            android:screenOrientation="portrait" />
-71-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy\app\src\main\AndroidManifest.xml:54:13-49
+71-->C:\Users\GAURAV\AndroidStudioProjects\SubstationSavvy-cloned\app\src\main\AndroidManifest.xml:54:13-49
 72
 73        <provider
 73-->[com.squareup.picasso:picasso:2.8] C:\Users\GAURAV\.gradle\caches\transforms-3\d0e70f9923911bd8cf4da665a7a6d067\transformed\picasso-2.8\AndroidManifest.xml:8:9-11:40

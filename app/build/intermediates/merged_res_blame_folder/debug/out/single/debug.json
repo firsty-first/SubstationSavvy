@@ -1,246 +1,242 @@
 [
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\xml\\backup_rules.xml"
+        "merged": "com.example.chatme.app-merged_res-35:/drawable_background_intro.png.flat",
+        "source": "com.example.chatme.app-main-37:/drawable/background_intro.png"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\drawable_electricianlogo.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\drawable\\electricianlogo.xml"
+        "merged": "com.example.chatme.app-merged_res-35:/drawable_baseline_download_24.xml.flat",
+        "source": "com.example.chatme.app-main-37:/drawable/baseline_download_24.xml"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\drawable_suggestion.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\drawable\\suggestion.xml"
+        "merged": "com.example.chatme.app-merged_res-35:/raw_botanimation.json.flat",
+        "source": "com.example.chatme.app-main-37:/raw/botanimation.json"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\layout_documentationcard.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\layout\\documentationcard.xml"
+        "merged": "com.example.chatme.app-merged_res-35:/drawable_baseline_record_voice_over_24.xml.flat",
+        "source": "com.example.chatme.app-main-37:/drawable/baseline_record_voice_over_24.xml"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\drawable_btnbgradius.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\drawable\\btnbgradius.xml"
+        "merged": "com.example.chatme.app-merged_res-35:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.chatme.app-main-37:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\drawable_asset_2.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\drawable\\asset_2.xml"
+        "merged": "com.example.chatme.app-merged_res-35:/layout_sample_reciever.xml.flat",
+        "source": "com.example.chatme.app-main-37:/layout/sample_reciever.xml"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "com.example.chatme.app-merged_res-35:/drawable_chatbot.png.flat",
+        "source": "com.example.chatme.app-main-37:/drawable/chatbot.png"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\layout_fragment_calll.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\layout\\fragment_calll.xml"
+        "merged": "com.example.chatme.app-merged_res-35:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.chatme.app-main-37:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\layout_activity_sign_in.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\layout\\activity_sign_in.xml"
+        "merged": "com.example.chatme.app-merged_res-35:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.chatme.app-main-37:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.chatme.app-merged_res-35:/layout_chatcard.xml.flat",
+        "source": "com.example.chatme.app-main-37:/layout/chatcard.xml"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\layout\\activity_main.xml"
+        "merged": "com.example.chatme.app-merged_res-35:/layout_activity_sign_in.xml.flat",
+        "source": "com.example.chatme.app-main-37:/layout/activity_sign_in.xml"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\drawable_cardtwocorner.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\drawable\\cardtwocorner.xml"
+        "merged": "com.example.chatme.app-merged_res-35:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.chatme.app-main-37:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "com.example.chatme.app-merged_res-35:/drawable_btnbgradius.xml.flat",
+        "source": "com.example.chatme.app-main-37:/drawable/btnbgradius.xml"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.chatme.app-merged_res-35:/drawable_parrot.png.flat",
+        "source": "com.example.chatme.app-main-37:/drawable/parrot.png"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\layout_sample_sender.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\layout\\sample_sender.xml"
+        "merged": "com.example.chatme.app-merged_res-35:/menu_menuehome.xml.flat",
+        "source": "com.example.chatme.app-main-37:/menu/menuehome.xml"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\drawable_baseline_upload_24.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\drawable\\baseline_upload_24.xml"
+        "merged": "com.example.chatme.app-merged_res-35:/drawable_liquidflow.png.flat",
+        "source": "com.example.chatme.app-main-37:/drawable/liquidflow.png"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\drawable_baseline_photo_camera_24.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\drawable\\baseline_photo_camera_24.xml"
+        "merged": "com.example.chatme.app-merged_res-35:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.chatme.app-main-37:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\drawable_welcome1.png.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\drawable\\welcome1.png"
+        "merged": "com.example.chatme.app-merged_res-35:/drawable_backbtn.xml.flat",
+        "source": "com.example.chatme.app-main-37:/drawable/backbtn.xml"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\drawable-v24\\ic_launcher_foreground.xml"
+        "merged": "com.example.chatme.app-merged_res-35:/layout_activity_main.xml.flat",
+        "source": "com.example.chatme.app-main-37:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\drawable_baseline_analytics_24.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\drawable\\baseline_analytics_24.xml"
+        "merged": "com.example.chatme.app-merged_res-35:/layout_sample_sender.xml.flat",
+        "source": "com.example.chatme.app-main-37:/layout/sample_sender.xml"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\drawable_outgoing_chat_bubble.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\drawable\\outgoing_chat_bubble.xml"
+        "merged": "com.example.chatme.app-merged_res-35:/drawable_baseline_upload_24.xml.flat",
+        "source": "com.example.chatme.app-main-37:/drawable/baseline_upload_24.xml"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\layout_activity_pdf_viewer.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\layout\\activity_pdf_viewer.xml"
+        "merged": "com.example.chatme.app-merged_res-35:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.chatme.app-main-37:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\drawable_book.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\drawable\\book.xml"
+        "merged": "com.example.chatme.app-merged_res-35:/layout_activity_suggest.xml.flat",
+        "source": "com.example.chatme.app-main-37:/layout/activity_suggest.xml"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\layout_activity_documentation.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\layout\\activity_documentation.xml"
+        "merged": "com.example.chatme.app-merged_res-35:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.chatme.app-main-37:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\drawable_backbtn.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\drawable\\backbtn.xml"
+        "merged": "com.example.chatme.app-merged_res-35:/drawable_baseline_analytics_24.xml.flat",
+        "source": "com.example.chatme.app-main-37:/drawable/baseline_analytics_24.xml"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\raw_electrician.json.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\raw\\electrician.json"
+        "merged": "com.example.chatme.app-merged_res-35:/raw_electrician.json.flat",
+        "source": "com.example.chatme.app-main-37:/raw/electrician.json"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "com.example.chatme.app-merged_res-35:/menu_fileupload.xml.flat",
+        "source": "com.example.chatme.app-main-37:/menu/fileupload.xml"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\menu_fileupload.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\menu\\fileupload.xml"
+        "merged": "com.example.chatme.app-merged_res-35:/layout_activity_documentation.xml.flat",
+        "source": "com.example.chatme.app-main-37:/layout/activity_documentation.xml"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\layout_fragment_story.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\layout\\fragment_story.xml"
+        "merged": "com.example.chatme.app-merged_res-35:/drawable_welcome1.png.flat",
+        "source": "com.example.chatme.app-main-37:/drawable/welcome1.png"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\layout_chatscreen_ui_activity.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\layout\\chatscreen_ui_activity.xml"
+        "merged": "com.example.chatme.app-merged_res-35:/drawable_outgoing_chat_bubble.xml.flat",
+        "source": "com.example.chatme.app-main-37:/drawable/outgoing_chat_bubble.xml"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\drawable_baseline_record_voice_over_24.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\drawable\\baseline_record_voice_over_24.xml"
+        "merged": "com.example.chatme.app-merged_res-35:/drawable_electricianlogo.xml.flat",
+        "source": "com.example.chatme.app-main-37:/drawable/electricianlogo.xml"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\drawable_parrot.png.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\drawable\\parrot.png"
+        "merged": "com.example.chatme.app-merged_res-35:/layout_activity_splashscreen.xml.flat",
+        "source": "com.example.chatme.app-main-37:/layout/activity_splashscreen.xml"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\mipmap-hdpi_chaticon.png.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\mipmap-hdpi\\chaticon.png"
+        "merged": "com.example.chatme.app-merged_res-35:/raw_bot.json.flat",
+        "source": "com.example.chatme.app-main-37:/raw/bot.json"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\layout_sample_reciever.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\layout\\sample_reciever.xml"
+        "merged": "com.example.chatme.app-merged_res-35:/xml_backup_rules.xml.flat",
+        "source": "com.example.chatme.app-main-37:/xml/backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\layout_fragment_chat.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\layout\\fragment_chat.xml"
+        "merged": "com.example.chatme.app-merged_res-35:/mipmap-hdpi_chaticon.png.flat",
+        "source": "com.example.chatme.app-main-37:/mipmap-hdpi/chaticon.png"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\drawable_background_intro.png.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\drawable\\background_intro.png"
+        "merged": "com.example.chatme.app-merged_res-35:/drawable_baseline_location_on_24.xml.flat",
+        "source": "com.example.chatme.app-main-37:/drawable/baseline_location_on_24.xml"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\layout_chatcard.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\layout\\chatcard.xml"
+        "merged": "com.example.chatme.app-merged_res-35:/layout_activity_pdf_viewer.xml.flat",
+        "source": "com.example.chatme.app-main-37:/layout/activity_pdf_viewer.xml"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\menu_menuehome.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\menu\\menuehome.xml"
+        "merged": "com.example.chatme.app-merged_res-35:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.chatme.app-main-37:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\layout_activity_splashscreen.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\layout\\activity_splashscreen.xml"
+        "merged": "com.example.chatme.app-merged_res-35:/layout_activity_home.xml.flat",
+        "source": "com.example.chatme.app-main-37:/layout/activity_home.xml"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\drawable_liquidflow.png.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\drawable\\liquidflow.png"
+        "merged": "com.example.chatme.app-merged_res-35:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.chatme.app-main-37:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "com.example.chatme.app-merged_res-35:/layout_documentationcard.xml.flat",
+        "source": "com.example.chatme.app-main-37:/layout/documentationcard.xml"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "com.example.chatme.app-merged_res-35:/drawable_send_24.xml.flat",
+        "source": "com.example.chatme.app-main-37:/drawable/send_24.xml"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\drawable_baseline_download_24.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\drawable\\baseline_download_24.xml"
-    },
-    {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\drawable_chatbot.png.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\drawable\\chatbot.png"
-    },
-    {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\layout_activity_suggest.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\layout\\activity_suggest.xml"
-    },
-    {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\layout_activity_home.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\layout\\activity_home.xml"
+        "merged": "com.example.chatme.app-merged_res-35:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.example.chatme.app-main-37:/drawable-v24/ic_launcher_foreground.xml"
     },
     {
         "merged": "com.example.chatme.app-merged_res-35:/layout_chatscreen_ui_activity.xml.flat",
         "source": "com.example.chatme.app-main-37:/layout/chatscreen_ui_activity.xml"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\raw_botanimation.json.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\raw\\botanimation.json"
+        "merged": "com.example.chatme.app-merged_res-35:/drawable_book.xml.flat",
+        "source": "com.example.chatme.app-main-37:/drawable/book.xml"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\drawable_send_24.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\drawable\\send_24.xml"
+        "merged": "com.example.chatme.app-merged_res-35:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.chatme.app-main-37:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\drawable\\ic_launcher_background.xml"
+        "merged": "com.example.chatme.app-merged_res-35:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.chatme.app-main-37:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.chatme.app-merged_res-35:/layout_fragment_calll.xml.flat",
+        "source": "com.example.chatme.app-main-37:/layout/fragment_calll.xml"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\drawable_chat_bg.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\drawable\\chat_bg.xml"
+        "merged": "com.example.chatme.app-merged_res-35:/drawable_chat_bg.xml.flat",
+        "source": "com.example.chatme.app-main-37:/drawable/chat_bg.xml"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "com.example.chatme.app-merged_res-35:/layout_fragment_chat.xml.flat",
+        "source": "com.example.chatme.app-main-37:/layout/fragment_chat.xml"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "com.example.chatme.app-merged_res-35:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.chatme.app-main-37:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "com.example.chatme.app-merged_res-35:/drawable_baseline_photo_camera_24.xml.flat",
+        "source": "com.example.chatme.app-main-37:/drawable/baseline_photo_camera_24.xml"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\drawable_incoming_chat_bubble.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\drawable\\incoming_chat_bubble.xml"
+        "merged": "com.example.chatme.app-merged_res-35:/drawable_cardtwocorner.xml.flat",
+        "source": "com.example.chatme.app-main-37:/drawable/cardtwocorner.xml"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\drawable_background_page.png.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\drawable\\background_page.png"
+        "merged": "com.example.chatme.app-merged_res-35:/layout_fragment_story.xml.flat",
+        "source": "com.example.chatme.app-main-37:/layout/fragment_story.xml"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\drawable_baseline_location_on_24.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\drawable\\baseline_location_on_24.xml"
+        "merged": "com.example.chatme.app-merged_res-35:/drawable_suggestion.xml.flat",
+        "source": "com.example.chatme.app-main-37:/drawable/suggestion.xml"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\xml\\data_extraction_rules.xml"
+        "merged": "com.example.chatme.app-merged_res-35:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.chatme.app-main-37:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\raw_bot.json.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\raw\\bot.json"
+        "merged": "com.example.chatme.app-merged_res-35:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.chatme.app-main-37:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-merged_res-35:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\daemon\\8.0\\com.example.chatme.app-main-37:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "com.example.chatme.app-merged_res-35:/drawable_incoming_chat_bubble.xml.flat",
+        "source": "com.example.chatme.app-main-37:/drawable/incoming_chat_bubble.xml"
+    },
+    {
+        "merged": "com.example.chatme.app-merged_res-35:/drawable_asset_2.xml.flat",
+        "source": "com.example.chatme.app-main-37:/drawable/asset_2.xml"
+    },
+    {
+        "merged": "com.example.chatme.app-merged_res-35:/drawable_background_page.png.flat",
+        "source": "com.example.chatme.app-main-37:/drawable/background_page.png"
     }
 ]
